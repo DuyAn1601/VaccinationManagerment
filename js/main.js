@@ -176,7 +176,7 @@ for (var i = 0; i < deleteicon.length; i++) {
 // Out deletevaccinedeletepopup
 
 let outicon = document.querySelector('.out-delete-vaccine');
-console.log(outicon)
+
 const handleoutdelete = () => {
 	deletewrapper.style.display = 'none';
 }
@@ -189,7 +189,7 @@ const handleoutdelete2 = ()=> {
 	vaccinedeletepopup.addEventListener('click',handledeletepopup= (e) => e.stopPropagation())
 	deletewrapper.style.display = 'none';
 }
-deletewrapper.addEventListener('click',handleoutdelete2)
+deletewrapper?.addEventListener('click',handleoutdelete2)
 
 
 
@@ -215,13 +215,14 @@ const handleBackVaccine = () => {
 }
 
 backList?.addEventListener('click',handleBackVaccine)
+backList2?.addEventListener('click',handleBackVaccine)
 EditcancelBackToVaccine?.addEventListener('click',handleBackVaccine)
 
 
 // Onclick create vaccine
 const createbuttonvc = document.querySelector('.fh5co-head-create-chuyen');
 const tableCreateVaccine = document.querySelector('.fh5co-head-create-new');
-const cancelBackToVaccine = document.querySelector('.cancel-back-to-vaccine2');
+const cancelBackToVaccine = document.querySelector('.fh5co-body-create-btn-cancel');
 const handleCreateVaccine = () => {
 	tableVaccine.style.display='none';
 	tableCreateVaccine.style.display='block';
@@ -235,13 +236,13 @@ createbuttonvc?.addEventListener('click',handleCreateVaccine)
 cancelBackToVaccine?.addEventListener('click',cancelBackToVaccines)
 backList2?.addEventListener('click',cancelBackToVaccines)
 
-(function () {
-	'use strict'
-	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-	tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-	  new bootstrap.Tooltip(tooltipTriggerEl)
-	})
-  })()
+// (function () {
+// 	'use strict'
+// 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+// 	tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+// 	  new bootstrap.Tooltip(tooltipTriggerEl)
+// 	})
+//   })()
 
 
 
@@ -255,44 +256,53 @@ const option2 = document.querySelector('.option-search-inject2');
 const form1 = document.querySelector('.search-main-main');
 const form2 = document.querySelector('.search-main-main-4');
 
-
-
-option1.onclick = () => {
-	form1.style.display = "flex";
-	form2.style.display = "none";
+const obtaintolookup = () => {
+	form1.style.display='flex';
+	form2.style.display='none';
 }
 
-option2.onclick = () => {
-	form2.style.display = "flex";
-	form1.style.display = "none";
+const lookuptoobtain = () => {
+	form1.style.display='none';
+	form2.style.display='flex';
 }
+
+option1?.addEventListener('click',obtaintolookup)
+option2?.addEventListener('click',lookuptoobtain)
 
 const login_form = document.querySelector('.signInWrap');
-const login = document.querySelector('.fh5co-main-menu-nav:last-child');
+const login = document.querySelector('.fh5co-main-menu-login');
 const sideBar = document.querySelector('#fh5co-aside')
 
 
-login.onclick = () => {
+const chooselogin = () => {
 	login_form.style.display = "flex";
 	sideBar.style.zIndex = 0;
 }
 
+login?.addEventListener('click', chooselogin)
 const exit_Icon = document.querySelector('.signIn_form > i');
 const form_Wrapper = document.querySelector('.signInWrap');
 const form = document.querySelector('.signIn');
 
-console.log(form_Wrapper)
 
-exit_Icon.onclick = () => {
+
+const chooseExit_icon = () => {
 	login_form.style.display = "none";
 	sideBar.style.zIndex = 999;
 }
 
-form_Wrapper.onclick = () => {
+exit_Icon?.addEventListener('click',chooseExit_icon)
+
+const chooseform_Wrapper = () => {
 	login_form.style.display = "none";
 	sideBar.style.zIndex = 999;
 }
 
-form.onclick = (e) => {
+form_Wrapper?.addEventListener('click',chooseform_Wrapper);
+
+const chooseform = (e) => {
 	e.stopPropagation();
 }
+
+form?.addEventListener('click',chooseform)
+

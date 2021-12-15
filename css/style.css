@@ -109,7 +109,7 @@ figure figcaption {
 }
 
 #fh5co-aside {
-  padding-top: 60px;
+  /* padding-top: 40px; */
   padding-bottom: 40px;
   width: 20%;
   position: fixed;
@@ -200,10 +200,17 @@ figure figcaption {
   
 }
 
+.fh5co-main-menu-nav {
+  color: #025B95;
+  font-size: 10px;
+  padding-top: 5px;
+  margin-left: 20px;
+}
 
 #fh5co-aside #fh5co-main-menu ul {
   text-align: left;
   margin: left 0px;
+  padding-top: 10px;
 }
 
 #fh5co-aside #fh5co-main-menu ul i{
@@ -215,7 +222,7 @@ figure figcaption {
   }
 }
 #fh5co-aside #fh5co-main-menu ul li {
-  margin: 0 0 0px 0;
+  margin: 0 0 0.5em 0;
   padding: 0;
   list-style: none;
 }
@@ -288,11 +295,11 @@ figure figcaption {
 }
 .fh5co-footer-help{
   font-size: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
 }
 .fh5co-footer-contact{
-  font-size: 16px;
+  font-size: 14px;
   color: #E8E3E3;
 }
 @media screen and (max-width: 768px) {
@@ -713,12 +720,12 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 .fh5co-heading{
   color: #EF6565;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .fh5co-heading-colored {
   color: #228896;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .fh5co-cards {
@@ -1383,9 +1390,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   height: 100%;
   text-align: center;
   border-collapse: collapse;
-  border-radius : 0.5em;
   overflow: hidden;
-  box-shadow: 0 2px 4px #8A8D90;
+  box-shadow: 0 2px 4px #8A8D90;  
 }
 
 .vaccine-table th {
@@ -1560,16 +1566,16 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   width: 135%;
   justify-content: space-between;
   align-items: center;
-  margin-left: 5rem;
-  margin-top: 1.2rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
 
 }
 
 .fh5co-body-edit-row span {
-  width: 40%;
   color:#00C8E3;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  width: 40%;
 }
 .fh5co-body-create-row span {
   color:#00C8E3;
@@ -1596,7 +1602,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   border: none;
   outline: none;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 18px;
+ 
   
 }
 .fh5co-body-edit-item{
@@ -1606,18 +1613,23 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 
 .fh5co-body-edit-item {
   border: 1px solid #025B95;
+  width: 400px;
+  height: 32px;
   border-radius: 7px;
   display: flex;
   align-items: center;
-  padding-right: 12px;
+  line-height: 1.6;
   background-color: #E7F6FF;
+  padding-right: 10px;
 }
 .fh5co-body-create-item {
   border: 1px solid #025B95;
+  width: 400px;
+  height: 32px;
   border-radius: 7px;
   display: flex;
   align-items: center;
-  padding-right: 12px;
+  line-height: 1.6;
   background-color: #E7F6FF;
 }
 .fh5co-body-edit-item i {
@@ -1628,49 +1640,65 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 .fh5co-body-edit-btn {
-  width:200px;
+  width:230px;
   display: flex;
   justify-content: space-between;
   margin-left:55px;
-  margin-top:20px;
+  margin-top:30px;
+  margin-bottom: 10px;
 }
+
+
 .fh5co-body-create-btn {
-  width:200px;
+  width:230px;
   display: flex;
   justify-content: space-between;
   margin-left:55px;
-  margin-top:20px;
+  margin-top:30px;
+  margin-bottom: 10px;
 }
 
 .fh5co-body-edit-btn button {
-  width: 85px;
-  border-radius: 7px;
-  border: 1px solid #025B95;
+  width: 100px;
+  height: 32px;
+  border-radius:10px;
   color: #025B95;
   font-weight: 500;
-  font-size:13px;
+  font-size:15px;
   background-color: #E7F6FF;
 }
 .fh5co-body-create-btn button {
-  width: 85px;
-  border-radius: 7px;
-  border: 1px solid #025B95;
+  width: 100px;
+  height: 32px;
+  border-radius:10px;
   color: #025B95;
   font-weight: 500;
-  font-size:13px;
+  font-size:15px;
   background-color: #E7F6FF;
 }
 
 .fh5co-body-edit-btn button:first-child {
   color:whitesmoke;
-  background-image: linear-gradient(45deg,#63BCCC,#46CACC);
+  border: none;
+  background-image: linear-gradient(90deg,#63BCCC,#46CACC);
 }
 
 .fh5co-body-create-btn button:first-child {
   color:whitesmoke;
-  background-image: linear-gradient(45deg,#63BCCC,#46CACC);
+  border: none;
+  background-image: linear-gradient(90deg,#63BCCC,#46CACC);
+}
+.fh5co-body-create-btn-cancel {
+  color:whitesmoke;
+  border: solid 1px #025B95;
 }
 
+.fh5co-body-edit-btn-cancel {
+  color:whitesmoke;
+  border: solid 1px #025B95;
+}
+
+  
 .fh5co-body-edit-backlist {
   margin-left:55px;
   margin-top: 10px;
@@ -1696,11 +1724,19 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   margin-left: 54px;
   margin-top: 40px;
 }
+.fh5co-body-edit-line-2 {
+  width: 2px;
+  background-color: #1BCCE4;
+  height: 7rem;
+  margin-left: 54px;
+  margin-top: 40px;
+}
+
+
 
 .fh5co-body-create-line{
   width: 2px;
   background-color: #1BCCE4;
-  height: 18rem;
   margin-left: 54px;
   margin-top: 40px;
 }
@@ -1712,7 +1748,9 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   display: flex;
 }
 
-
+.fh5co-body-create-item input::placeholder {
+  color:#025B95;
+}
 .fh5co-narrow-content-2{
   display: none;
   margin-left: 47px;
@@ -1728,10 +1766,11 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   cursor: pointer;
   color: #025B95;
 }
-
 .fh5co-head-create-new{
+  cursor: pointer;
   margin-left: 4.3rem;
   display: none;
+  cursor: pointer;
 }
 
 .search-user-main {
@@ -1884,6 +1923,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
     font-weight: 800;
     transition: 0.3s;
     font-family: "Roboto", Arial, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 0.4em;
 
 }
 
@@ -1904,7 +1945,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   padding-right: 0;
   border-radius: 5px;
   width: 170px;
-  background-color: rgb(141,188,213,90%);
+  background-color: rgb(141,188,213,100%);
   z-index: 9999;
 }
 .arrow-up {
@@ -1915,7 +1956,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid rgb(141,188,213,90%);
-  margin-left: 55px;
+  margin-left: 20px;
 }
 
 .block-popup-pro {
@@ -2726,10 +2767,181 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   font-size: 1.2rem;
 }
 
+.head-nav {
+ background-image: url(../images/Group\ 460.png);
+ background-position: center;
+ background-repeat: no-repeat;  
+ 
+ height: 275px; 
+}
+.head-nav-altteam {
+ color: #FFBD89;
+ text-align: center;
+ padding-top: 20px;
+ margin-bottom: 5px;
+}
+.head-nav-hr {
+ color: #FFBD89 !important;
+ text-align: center;
+ width: 80%;
+ padding-top:0;
+ margin: 0 auto;
+ size: 5px;
+}
+.head-nav-vaccination {
+ color: #FFFFFF !important;
+ text-align: center;
+ font-weight: 600;
+ padding-top: 10px;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+.head-nav-img {
+  width: 40px;
+  display: block;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head-nav-username {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.head-nav-email {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0 auto;
+}
 
   
 }
 
+.vaccine-table-district th:first-child {
+  padding-left: 3.5em;
+}
+
+@media screen and (max-width: 1062px) {
+  
+  .vaccine-table-district th:first-child  {
+    padding-left: 1.5em;
+}
+
+}
+
+.fh5co-body-edit-line-3 {
+    width: 2px;
+    background-color: #1BCCE4;
+    height: 3rem;
+    margin-left: 54px;
+    margin-top: 40px;
+}
+
+
+
+.vaccine-table-staff th:first-child{
+  padding-left: 3.5em;
+}
+
+@media screen and (max-width: 1060px) {
+  
+  .vaccine-table-staff th:first-child  {
+    padding-left: 1.1em;
+}
+
+}
+
+.fh5co-body-edit-line-4{
+  width: 2px;
+    background-color: #1BCCE4;
+    height: 11.5rem;
+    margin-left: 54px;
+    margin-top: 40px;
+
+}
+
+
+.vaccine-table-distribution th:first-child {
+  padding-left: 1.7em;
+  text-align: center;
+}
+
+.vaccine-table-distribution td:first-child {
+  text-align: center;
+  padding-left: 1.5em;
+}
+
+.fh5co-body-edit-line-5{
+  width: 2px;
+    background-color: #1BCCE4;
+    height: 16rem;
+    margin-left: 54px;
+    margin-top: 40px;
+}
+
+.vaccine-table-health th{
+   font-size: 1.5rem;
+  
+}
+
+.vaccine-table-health th:first-child {
+  padding-left: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1062px) {
+  
+  .vaccine-table-health td:first-child  {
+    text-align: center;
+}
+
+}
+
+.fh5co-body-edit-line-6 {
+  width: 2px;
+  background-color: #1BCCE4;
+  height: 29rem;
+  margin-left: 54px;
+  margin-top: 40px;
+}
+
+.fh5co-body-edit-item input {
+  padding-left: 1em;
+  
+}
+
+@media screen and (max-width: 1132px) {
+  
+  
+
+  .fh5co-body-edit-row span{
+     font-size: 1.5rem;
+     margin-right: 3em;
+  }
+  .fh5co-body-create-row span {
+    font-size: 1.5rem;
+    margin-right: 1.5em;
+  }
+
+
+}
+
+@media screen and (max-width: 520px) {
+  
+  .edit-health-delaration input {
+    padding-left: 1em;
+}
+
+
+}
+
+.edit-health-delaration {
+  padding-right: 5px;
+}
 
 
  
