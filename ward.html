@@ -67,8 +67,7 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			
-		<nav id="fh5co-main-menu" role="navigation">
+			<nav id="fh5co-main-menu" role="navigation">
 				<div class="head-nav">
 					<h4 class="head-nav-altteam"> ALT TEAM </h4>
 					<hr class="head-nav-hr">
@@ -78,14 +77,29 @@
 					<p class="head-nav-email">dpthao251@gmail.com</p>
 				</div>
 				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul>
-					<li class="fh5co-active"><a href="./adminHome.html">Home</a></li>
-					<li><a href="#">Notification</a></li>
-					<li><a href="#">Setting</a></li>
-					<li><a href="#">As a client</a></li>
-					<li><a href="#">Logout</a></li>
+				<ul class="fh5co-main-menu-nav-ul">
+						<li class="fh5co-main-menu-nav-item">
+						<i class="fas fa-home"></i>
+						<a href="./adminHome.html">Home</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-file-alt"></i>
+							<a class ="vaccine-regis" href="#">Report</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-cog"></i>
+							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-share-square"></i>
+							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
+						</li>
+						<li class="login-pls fh5co-main-menu-nav-item">
+							<i class="color-white-pls fas fa-sign-out-alt"></i>
+							<a href="#" class="fh5co-main-menu-login">Login</a>
+						</li>
 				</ul>
-			</nav>	
+			</nav>
 
 			<div class="fh5co-footer">
 				<a class="fh5co-footer-help"href="">Need help?</a>
@@ -196,14 +210,14 @@
 							<div class="fh5co-body-edit-row">
 								<span>Ward</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
+									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
 								<span>District</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
+									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
@@ -232,13 +246,13 @@
 						</div>
 						<div class="fh5co-body-create-vaccine" data-animate-effect="fadeInLeft">
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>District</span>
+								<span>Ward</span>
 								<div class="fh5co-body-create-item" >
 									<input type="text" placeholder="Enter value" value="">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Ward</span>
+								<span>District</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">										
 								</div>

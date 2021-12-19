@@ -73,6 +73,7 @@
 .signIn_form > h1 {
   color: #C0556F;
   font-size: 25px;
+  font-weight: 500;
 }
 
 .signIn_form > input,
@@ -210,4 +211,9 @@
 
 .signIn_form i {
   color: #025B95;
+}
+
+.signIn-welcome h1 {
+  color:#025B95;
+  font-weight: 500;
 }

@@ -67,8 +67,7 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			
-		<nav id="fh5co-main-menu" role="navigation">
+			<nav id="fh5co-main-menu" role="navigation">
 				<div class="head-nav">
 					<h4 class="head-nav-altteam"> ALT TEAM </h4>
 					<hr class="head-nav-hr">
@@ -78,14 +77,29 @@
 					<p class="head-nav-email">dpthao251@gmail.com</p>
 				</div>
 				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul>
-					<li class="fh5co-active"><a href="./adminHome.html">Home</a></li>
-					<li><a href="#">Report</a></li>
-					<li><a href="#">Setting</a></li>
-					<li><a href="#">As a client</a></li>
-					<li><a href="#">Logout</a></li>
+				<ul class="fh5co-main-menu-nav-ul">
+						<li class="fh5co-main-menu-nav-item">
+						<i class="fas fa-home"></i>
+						<a href="./adminHome.html">Home</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-file-alt"></i>
+							<a class ="vaccine-regis" href="#">Report</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-cog"></i>
+							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-share-square"></i>
+							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
+						</li>
+						<li class="login-pls fh5co-main-menu-nav-item">
+							<i class="color-white-pls fas fa-sign-out-alt"></i>
+							<a href="#" class="fh5co-main-menu-login">Login</a>
+						</li>
 				</ul>
-			</nav>	
+			</nav>
 
 			<div class="fh5co-footer">
 				<a class="fh5co-footer-help"href="">Need help?</a>
@@ -127,13 +141,13 @@
 					<table  class="vaccine-table-staff vaccine-table" data-animate-effect="fadeInLeft">
 						<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 							<th>
-								Mật khẩu
+								Password
 							</th>
 							<th>
-								Phân quyền
+								Role
 							</th>
 							<th>
-								Citizen
+								CitizenID
 							</th>
 							<th>    
 							   
@@ -202,30 +216,31 @@
                 </div>
                 <div class="fh5co-body-edit">
 					<div class="fh5co-body-edit-line-and-vaccine">
-						<div class="fh5co-body-edit-line-4">
+						<div class="fh5co-body-create-line">
 
 						</div>
 						<div class="fh5co-body-edit-vaccine">
 							<div class="fh5co-body-edit-row">
-								<span>Mật khẩu</span>
+								<span>Password</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Phân quyền</span>
+								<span>Role</span>
 								<div class="fh5co-body-edit-item">
 									<input type="text" placeholder="Enter role" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Citizen</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Enter value" value="">
-									<i class="fas fa-pen"></i>
-								</div>
+								<span>CitizenID</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023264</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023254</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023244</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -252,22 +267,24 @@
 						</div>
 						<div class="fh5co-body-create-vaccine" data-animate-effect="fadeInLeft">
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Mật khẩu</span>
+								<span>Password</span>
 								<div class="fh5co-body-create-item" >
 									<input type="text" placeholder="Enter value" value="">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Phân quyền</span>
+								<span>Role</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter role" value="">								
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Citizen</span>
-								<div class="fh5co-body-create-item">
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>CitizenID</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023264</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023254</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023244</option>
+								</select>
 							</div>
 							
 						</div>

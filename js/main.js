@@ -306,3 +306,4 @@ const chooseform = (e) => {
 
 form?.addEventListener('click',chooseform)
 
+$('.collapse').collapse()

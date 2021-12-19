@@ -68,8 +68,7 @@
 	<div id="fh5co-page">
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			
-		<nav id="fh5co-main-menu" role="navigation">
+			<nav id="fh5co-main-menu" role="navigation">
 				<div class="head-nav">
 					<h4 class="head-nav-altteam"> ALT TEAM </h4>
 					<hr class="head-nav-hr">
@@ -79,14 +78,29 @@
 					<p class="head-nav-email">dpthao251@gmail.com</p>
 				</div>
 				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul>
-					<li class="fh5co-active"><a href="./adminHome.html">Home</a></li>
-					<li><a href="#">Notification</a></li>
-					<li><a href="#">Setting</a></li>
-					<li><a href="#">As a client</a></li>
-					<li><a href="#">Logout</a></li>
+				<ul class="fh5co-main-menu-nav-ul">
+						<li class="fh5co-main-menu-nav-item">
+						<i class="fas fa-home"></i>
+						<a href="./adminHome.html">Home</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-file-alt"></i>
+							<a class ="vaccine-regis" href="#">Report</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-cog"></i>
+							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
+						</li>
+						<li class="fh5co-main-menu-nav-item">
+							<i class="fas fa-share-square"></i>
+							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
+						</li>
+						<li class="login-pls fh5co-main-menu-nav-item">
+							<i class="color-white-pls fas fa-sign-out-alt"></i>
+							<a href="#" class="fh5co-main-menu-login">Login</a>
+						</li>
 				</ul>
-			</nav>	
+			</nav>
 
 			<div class="fh5co-footer">
 				<a class="fh5co-footer-help"href="">Need help?</a>
@@ -99,7 +113,7 @@
 		<div id="fh5co-main">
 			<div class="fh5co-narrow-content">
 				<div class="fh5co-header">
-					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Vaccine</h2>
+					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">VACCINE</h2>
 					<div class="fh5co-heading-search"> 
 						<i class="fas fa-search"></i>
 						<input class="fh5co-heading-search-put animate-box" type="text" placeholder="Search" data-animate-effect="fadeInLeft">
@@ -131,16 +145,16 @@
 								Vaccine
 							</th>
 							<th>
-								Xuất xứ
+								Origin
 							</th>
 							<th>
-								Khoảng cách tiêm
+								Max Range
 							</th>
 							<th>
-								Bảo quản
+								Expired
 							</th>
 							<th>
-								Số liều
+								Doses
 							</th>
 							<th>    
 							   
@@ -214,43 +228,43 @@
                 </div>
                 <div class="fh5co-body-edit">
 					<div class="fh5co-body-edit-line-and-vaccine">
-						<div class="fh5co-body-edit-line">
+						<div class="fh5co-body-create-line">
 
 						</div>
 						<div class="fh5co-body-edit-vaccine">
 							<div class="fh5co-body-edit-row">
 								<span>Vaccine</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
+									<input type="text" placeholder="Enter value">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Xuất xứ</span>
+								<span>Origin</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
+									<input type="text" placeholder="Enter value">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Khoảng cách tiêm</span>
+								<span>Max Range</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
-									<i class="fas fa-pen"></i>
+									<input type="number" placeholder="Enter number" min="0">
+									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Bảo quản</span>
+								<span>Expired</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
-									<i class="fas fa-pen"></i>
+									<input type="number" placeholder="Enter number" min="0">
+									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>Số liều</span>
+								<span>Doses</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text">
-									<i class="fas fa-pen"></i>
+									<input type="number" placeholder="Enter number" min="0">
+									
 								</div>
 							</div>
 						</div>
@@ -280,31 +294,31 @@
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
 								<span>Vaccine</span>
 								<div class="fh5co-body-create-item" >
-									<input type="text">
+									<input type="text" placeholder="Enter value">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Xuất xứ</span>
+								<span>Origin</span>
 								<div class="fh5co-body-create-item">
-									<input type="text">										
+									<input type="text" placeholder="Enter value">									
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Khoảng cách tiêm</span>
+								<span>Max Range</span>
 								<div class="fh5co-body-create-item">
-									<input type="text">
+									<input type="number" placeholder="Enter number" min="0">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Bảo quản</span>
+								<span>Expired</span>
 								<div class="fh5co-body-create-item">
-									<input type="text">
+									<input type="number" placeholder="Enter number" min="0">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>Số liều</span>
+								<span>Doses</span>
 								<div class="fh5co-body-create-item">
-									<input type="text">
+									<input type="number" placeholder="Enter number" min="0">
 								</div>
 							</div>
 						</div>

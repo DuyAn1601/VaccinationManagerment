@@ -109,10 +109,10 @@
 				</div>
 			</div>
 		</aside>
-        <div id="fh5co-main">
-			<div class="fh5co-narrow-content">
+        <div id="fh5co-main" data-animate-effect="fadeInLeft">
+			<div class="fh5co-narrow-content" data-animate-effect="fadeInLeft">
 				<div class="fh5co-header">
-					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">District</h2>
+					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">VACCINE REGISTRATION</h2>
 					<div class="fh5co-heading-search"> 
 						<i class="fas fa-search"></i>
 						<input class="fh5co-heading-search-put animate-box" type="text" placeholder="Search" data-animate-effect="fadeInLeft">
@@ -138,21 +138,37 @@
 							</select>
 						</div>
 					</div>
-					<table  class="vaccine-table-district vaccine-table" data-animate-effect="fadeInLeft">
+					<table  class="vaccine-table-reg vaccine-table" data-animate-effect="fadeInLeft">
 						<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 							<th>
-								District
+								CitizenID
 							</th>
 							<th>
-								City
+								AnamnessisID
+							</th>
+							<th>
+								Agreement
+							</th>
+							<th>
+								ChoiceInjections
+							</th>
+							<th>
+								DateOfRegistration
+							</th>
+							<th>
+								Status		
 							</th>
 							<th>    
 							   
 							</th>
 						</tr>
 						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
-							<td>Gò Vấp</td>
-							<td>TP.Hồ Chí Minh</td>
+							<td>070365201036</td>
+							<td>ana00312</td>
+							<td>yes</td>
+							<td>1</td>
+							<td>16-12-2021</td>
+							<td>done</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
@@ -160,32 +176,48 @@
 							
 						</tr>
 						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
-							<td>Gò Vấp</td>
-							<td>TP.Hồ Chí Minh</td>
+							<td>070365201036</td>
+							<td>ana00312</td>
+							<td>yes</td>
+							<td>1</td>
+							<td>16-12-2021</td>
+							<td>done</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
-						<tr  class="vaccine-table-row">
-							<td>Gò Vấp</td>
-							<td>TP.Hồ Chí Minh</td>
+						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
+							<td>070365201036</td>
+							<td>ana00312</td>
+							<td>yes</td>
+							<td>1</td>
+							<td>16-12-2021</td>
+							<td>done</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
-						<tr  class="vaccine-table-row">
-							<td>Gò Vấp</td>
-							<td>TP.Hồ Chí Minh</td>
+						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
+							<td>070365201036</td>
+							<td>ana00312</td>
+							<td>yes</td>
+							<td>1</td>
+							<td>16-12-2021</td>
+							<td>done</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
-						<tr  class="vaccine-table-row">
-							<td>Gò Vấp</td>
-							<td>TP.Hồ Chí Minh</td>
+						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
+							<td>070365201036</td>
+							<td>ana00312</td>
+							<td>yes</td>
+							<td>1</td>
+							<td>16-12-2021</td>
+							<td>done</td>
 							<td>
 								<i class="edit-real fas fa-pen"></i></a>
 								<i class="delete-real fas fa-trash"></i>
@@ -196,31 +228,63 @@
             </div>
         </div>
 		<div id="fh5co-main">
-			<div class="fh5co-narrow-content-2">
-                <div class="fh5co-head-edit">
+			<div class="fh5co-narrow-content-2" data-animate-effect="fadeInLeft">
+                <div class="fh5co-head-edit" data-animate-effect="fadeInLeft">
                     <span>Edit</span>
-                    <span>Please edit your district information !!</span>
+                    <span>Please edit your vaccine registration !!</span>
                 </div>
                 <div class="fh5co-body-edit">
 					<div class="fh5co-body-edit-line-and-vaccine">
-						<div class="fh5co-body-edit-line-2">
+						<div class="fh5co-body-create-line">
 
 						</div>
 						<div class="fh5co-body-edit-vaccine">
 							<div class="fh5co-body-edit-row">
-								<span>District</span>
+								<span>CitizenID</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023264</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023254</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023244</option>
+								</select>
+							</div>
+							<div class="fh5co-body-edit-row">
+								<span>AnamnessisID</span>
 								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Edit value">
+									<input type="text" placeholder="Enter value" value="">
 									<i class="fas fa-pen"></i>
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
-								<span>City</span>
-								<div class="fh5co-body-edit-item">
-									<input type="text" placeholder="Edit value">
-									<i class="fas fa-pen"></i>
+								<span>Agreement</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >No</option>
+								</select>
+							</div>
+							<div class="fh5co-body-edit-row">
+								<span>ChoiceInjections</span>
+								<select name="ChoiceInjections" id="ChoiceInjections" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >1</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >2</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >3</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >4</option>
+								</select>
+							</div>
+							<div class="fh5co-body-edit-row">
+								<span>DateOfRegistration</span>
+								<div class="edit-health-delaration fh5co-body-edit-item">
+									<input type="date" placeholder="Enter value" value="">
+									
 								</div>
 							</div>
+							<div class="fh5co-body-edit-row">
+								<span>Status</span>
+								<select name="Agreement" id="Agreement" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Done</option>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Wait</option>
+								</select>
+							</div>
+							
 						</div>
 					</div>
 					
@@ -237,7 +301,7 @@
 			<div class="fh5co-head-create-new" data-animate-effect="fadeInLeft">
 				<div class="fh5co-head-create" data-animate-effect="fadeInLeft">
 					<span>Create New</span>
-					<span class="fh5co-head-create-desc">Please enter new district !!</span>
+					<span class="fh5co-head-create-desc">Please enter new health delaration !!</span>
 				</div>
 				<div class="fh5co-body-create" data-animate-effect="fadeInLeft">
 					<div class="fh5co-body-create-line-and-vaccine">
@@ -246,17 +310,50 @@
 						</div>
 						<div class="fh5co-body-create-vaccine" data-animate-effect="fadeInLeft">
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>District</span>
-								<div class="fh5co-body-create-item" >
-									<input type="text" placeholder="Enter value" value="">
-								</div>
+								<span>CitizenID</span>
+								<select name="Citizen" id="Citizen" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023264</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023254</option>
+									<option value="citizen" class="vaccine-registration-vaccination-sl-opt" >079201023244</option>
+								</select>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
-								<span>City</span>
+								<span>AnamnessisID</span>
 								<div class="fh5co-body-create-item">
 									<input type="text" placeholder="Enter value" value="">										
 								</div>
-							</div>								
+							</div>
+							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
+								<span>Agreement</span>
+								<select name="Agreement" id="Agreement" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Yes</option>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >No</option>
+								</select>
+							</div>
+							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
+								<span>ChoiceInjections</span>
+								<select name="ChoiceInjections" id="ChoiceInjections" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >1</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >2</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >3</option>
+									<option value="choiceinjections" class="vaccine-registration-vaccination-sl-opt" >4</option>
+								</select>
+							</div>
+							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
+								<span>DateOfRegistration</span>
+								<div class="fh5co-body-create-item">
+									<input type="date" placeholder="Enter value" value="">
+									
+								</div>
+							</div>
+							<div class="fh5co-body-create-row">
+								<span>Status</span>
+								<select name="Agreement" id="Agreement" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Done</option>
+									<option value="agreement" class="vaccine-registration-vaccination-sl-opt" >Wait</option>
+								</select>
+							</div>
+							
 						</div>
 					</div>
 					
@@ -284,8 +381,8 @@
 					Are you sure you want to delete this?
 				</div>
 				<div class="vaccine-delete-text">
-					<span>District</span>
-					<span>Gò Vấp</span>
+					<span>Registration</span>
+					<span>070365201036</span>
 				</div>
 				<div class="vaccine-delete-button-1">
 					<button class="out-cancel-vaccine" >Cancel</button>
@@ -293,7 +390,6 @@
 				</div>
 			</div>
 		</div>
-
 		
 
 	<!-- jQuery -->
