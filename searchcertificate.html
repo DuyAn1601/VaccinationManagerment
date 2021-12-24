@@ -216,7 +216,7 @@
 				  </div>
 				</div>
 			  </div>
-			  <div class="signInWrap" >
+			<div class="signInWrap" >
 				<div class="signIn" >
 				  
 				  <div class="signIn-welcome">
@@ -230,8 +230,8 @@
 					<h1>LOGIN</h1>
 					<input type="email" placeholder="Email or phone number" />
 					<div class="signIn_password">
-					  <input type='password' placeholder="Password" />
-					  <i class="fas fa-eye" ></i>
+					  <input type='password'  id="myInputLogin" placeholder="Password" />
+					  <i class="fas fa-eye" aria-hidden="true" onclick="myFunction2()" ></i>
 					</div>
 					<div class="signIn_check">
 					  <input type="checkbox" name="remember" />
@@ -250,6 +250,27 @@
 		
 		  </div>
 		</div>
+		<script>
+			function myFunction() {
+			var x = document.getElementById("myInput");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+			}
+		</script>
+	
+	<script>
+		function myFunction2() {
+		var y = document.getElementById("myInputLogin");
+		if (y.type === "password") {
+			y.type = "text";
+		} else {
+			y.type = "password";
+		}
+		}
+	</script>
         
 		
 		

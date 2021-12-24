@@ -209,10 +209,11 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="Vaccination" id="Vaccination" class="vaccine-registration-vaccination-sl" required>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Male</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Female</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Other</option>
+									<select name="gender" id="gender" class="vaccine-registration-vaccination-sl" required>
+										<option value="" selected disabled hidden>Choose Gender</option>
+										<option value="gender" class="vaccine-registration-vaccination-sl-opt" >Male</option>
+										<option value="gender" class="vaccine-registration-vaccination-sl-opt" >Female</option>
+										<option value="gender" class="vaccine-registration-vaccination-sl-opt" >Other</option>
 									</select>
 								</div>
 								<div class="col-md-4 vaccine-registration-body-vaccination-all">
@@ -272,11 +273,11 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="Vaccination" id="Vaccination" class="vaccine-registration-vaccination-sl" required>
-										
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Kinh</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Chăm</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Ê-đê</option>
+									<select name="nation" id="nation" class="vaccine-registration-vaccination-sl" required>
+										<option value="" selected disabled hidden>Choose Nation</option>
+										<option value="nation" class="vaccine-registration-vaccination-sl-opt" >Kinh</option>
+										<option value="nation" class="vaccine-registration-vaccination-sl-opt" >Chăm</option>
+										<option value="nation" class="vaccine-registration-vaccination-sl-opt" >Ê-đê</option>
 									</select>
 								</div>
 								<div class="col-md-4 vaccine-registration-body-vaccination-all">
@@ -286,10 +287,11 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="Vaccination" id="Vaccination" class="vaccine-registration-vaccination-sl" required>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Việt Nam</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Lào</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Campuchia</option>
+									<select name="nationality" id="nationality" class="vaccine-registration-vaccination-sl" required>
+										<option value="" selected disabled hidden>Choose Nationality</option>
+										<option value="nationality" class="vaccine-registration-vaccination-sl-opt" >Việt Nam</option>
+										<option value="nationality" class="vaccine-registration-vaccination-sl-opt" >Lào</option>
+										<option value="nationality" class="vaccine-registration-vaccination-sl-opt" >Campuchia</option>
 									</select>
 								</div>
 								<div class="col-md-4 vaccine-registration-body-vaccination-all">
@@ -321,10 +323,11 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="Vaccination" id="Vaccination" class="vaccine-registration-vaccination-sl" required>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Thành phố Hồ Chí Minh</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Trà Vinh</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Bến Tre</option>
+									<select name="city" id="city" class="vaccine-registration-vaccination-sl" required>
+										<option value="" selected disabled hidden>Choose City</option>
+										<option value="city" class="vaccine-registration-vaccination-sl-opt" >Thành phố Hồ Chí Minh</option>
+										<option value="city" class="vaccine-registration-vaccination-sl-opt" >Trà Vinh</option>
+										<option value="city" class="vaccine-registration-vaccination-sl-opt" >Bến Tre</option>
 									</select>
 								</div>
 								<div class="col-md-3-health col-md-3 vaccine-registration-body-vaccination-all">
@@ -334,10 +337,11 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="Vaccination" id="Vaccination" class="vaccine-registration-vaccination-sl" required>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Gò Vấp</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Bình Thạnh</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Thủ Đức</option>
+									<select name="district" id="district" class="vaccine-registration-vaccination-sl" required>
+										<option value="" selected disabled hidden>Choose District</option>
+										<option value="district" class="vaccine-registration-vaccination-sl-opt" >Gò Vấp</option>
+										<option value="district" class="vaccine-registration-vaccination-sl-opt" >Bình Thạnh</option>
+										<option value="district" class="vaccine-registration-vaccination-sl-opt" >Thủ Đức</option>
 									</select>
 								</div>
 								<div class="col-md-3-health col-md-3 vaccine-registration-body-vaccination-all">
@@ -347,10 +351,11 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="Vaccination" id="Vaccination" class="vaccine-registration-vaccination-sl" required>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Phường 1</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Lào</option>
-										<option value="vaccination" class="vaccine-registration-vaccination-sl-opt" >Campuchia</option>
+									<select name="ward" id="ward" class="vaccine-registration-vaccination-sl" required>
+										<option value="" selected disabled hidden>Choose Ward</option>
+										<option value="ward" class="vaccine-registration-vaccination-sl-opt" >Phường 1</option>
+										<option value="ward" class="vaccine-registration-vaccination-sl-opt" >Phường Tân Phú</option>
+										<option value="ward" class="vaccine-registration-vaccination-sl-opt" >Phường 11</option>
 									</select>
 								</div>
 							</div>
@@ -509,7 +514,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="signInWrap" >
+	<div class="signInWrap" >
 		<div class="signIn" >
 		  
 		  <div class="signIn-welcome">
@@ -523,8 +528,8 @@
 			<h1>LOGIN</h1>
 			<input type="email" placeholder="Email or phone number" />
 			<div class="signIn_password">
-			  <input type='password' placeholder="Password" />
-			  <i class="fas fa-eye" ></i>
+			  <input type='password'  id="myInputLogin" placeholder="Password" />
+			  <i class="fas fa-eye" aria-hidden="true" onclick="myFunction2()" ></i>
 			</div>
 			<div class="signIn_check">
 			  <input type="checkbox" name="remember" />
@@ -543,6 +548,27 @@
 
   </div>
 </div>
+<script>
+	function myFunction() {
+	var x = document.getElementById("myInput");
+	if (x.type === "password") {
+		x.type = "text";
+	} else {
+		x.type = "password";
+	}
+	}
+</script>
+
+<script>
+function myFunction2() {
+var y = document.getElementById("myInputLogin");
+if (y.type === "password") {
+	y.type = "text";
+} else {
+	y.type = "password";
+}
+}
+</script>
 		
 		
 		
