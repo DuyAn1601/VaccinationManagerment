@@ -55,6 +55,8 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<link rel="stylesheet" href="./css/SignIn.css">
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -96,7 +98,7 @@
 						</li>
 						<li class="login-pls fh5co-main-menu-nav-item">
 							<i class="color-white-pls fas fa-sign-out-alt"></i>
-							<a href="#" class="fh5co-main-menu-login">Login</a>
+							<a href="#" class="fh5co-main-menu-logout">Logout</a>
 						</li>
 				</ul>
 			</nav>
@@ -122,11 +124,7 @@
 					<div class="create-vaccine" data-animate-effect="fadeInLeft">
 						<button class="fh5co-head-create-chuyen">CREATE NEW</button>
 						<div class="create-vaccine-filter">
-							<div class="create-vaccine-filter-number">
-								<i class="create-vaccine-filter-num-color fas fa-chevron-left"></i>
-								<div class="create-vaccine-filter-num">1-5/5</div>
-								<i class="create-vaccine-filter-num-color fas fa-chevron-right"></i>
-							</div>
+							
 							<div class="create-vaccine-filter-num-color create-vaccine-filter-num-colorx">
 								<i class="fas fa-list-alt"></i>
 								<i class=" fas fa-share-alt-square"></i>
@@ -223,7 +221,79 @@
 							<td>No</td>
 							<td>No</td>
 							<td>No</td>
+							<td>Yes</td>
+							<td>Unknown</td>
+							<td>Yes</td>
 							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i></a>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i></a>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Unknown</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i></a>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Unknown</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>No</td>
+							<td>No</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i></a>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
 							<td>No</td>
 							<td>No</td>
 							<td>No</td>
@@ -258,6 +328,24 @@
 							<td>No</td>
 							<td>No</td>
 							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i></a>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>No</td>
+							<td>No</td>
+							<td>No</td>
+							<td>Yes</td>
 							<td>No</td>
 							<td>No</td>
 							<td>No</td>
@@ -272,6 +360,18 @@
 							</td>
 						</tr>
 					</table>
+					<div class="container">
+               
+						<ul class="pagination">
+						  <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+						  <li class="page-item"><a class="page-link" href="#">1</a></li>
+						  <li class="page-item"><a class="page-link" href="#">2</a></li>
+						  <li class="page-item"><a class="page-link" href="#">3</a></li>
+						  <li class="page-item"><a class="page-link" href="#">4</a></li>
+						  <li class="page-item"><a class="page-link" href="#">5</a></li>
+						  <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+						</ul>
+					  </div>
 				</div>
 			</div>
 		</div>
@@ -540,6 +640,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="vaccine-delete-wrapper logout-right-now">
+			<div class="vaccine-delete logout-right-now-pls" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Logout</span>
+					<i class=" out-delete-vaccine out-logout-vaccine fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Are you sure you want to logout?
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
+					<button><a href="./home.html">Logout</a></button>
+				</div>
+			</div>
+		</div>
+		
 
 		
 

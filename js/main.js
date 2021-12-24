@@ -293,6 +293,16 @@ const chooseExit_icon = () => {
 
 exit_Icon?.addEventListener('click',chooseExit_icon)
 
+const exit_Icon2 = document.querySelector('.SignUp_form > i');
+
+
+const chooseExit_icon2 = () => {
+	signup_form.style.display = "none";
+	sideBar.style.zIndex = 999;
+}
+
+exit_Icon2?.addEventListener('click',chooseExit_icon2)
+
 const chooseform_Wrapper = () => {
 	login_form.style.display = "none";
 	sideBar.style.zIndex = 999;
@@ -306,4 +316,85 @@ const chooseform = (e) => {
 
 form?.addEventListener('click',chooseform)
 
+// -----------------------------------------------------------------------
+
+
 $('.collapse').collapse()
+// ----------------------------------------------------------------------------
+const footer = document.querySelector('.fh5co-footer');
+const search_button = document.querySelector('.accordion-button');
+const search_button_collapse =  document.querySelector('.collapsed');
+var footer_appear = true;
+
+const clickSeacrh = () => {
+	if (footer_appear) {
+		footer.style.display = "none";
+		footer_appear=false;
+	}
+	else
+	{
+		footer.style.display = 'block';
+		footer_appear = true;
+	}
+}
+	
+search_button?.addEventListener('click',clickSeacrh)
+
+// -------------------------------------------------------------------
+const register_btn = document.querySelector('.up-to-register');
+const signup_form =document.querySelector('.SignUpWrap')
+const clickhandleregister = () => {
+	
+	login_form.style.display = 'none';
+	signup_form.style.display= 'flex';
+}
+register_btn?.addEventListener('click',clickhandleregister)
+
+const login_btn = document.querySelector('.up-to-login');
+const clickhandlelogin = () => {
+	login_form.style.display = 'flex';
+	signup_form.style.display= 'none';
+}
+login_btn?.addEventListener('click',clickhandlelogin);
+
+const signuphelp = document.querySelector('.SignUp')
+const chooseform_Wrapper2 = () => {
+	signup_form.style.display = "none";
+	sideBar.style.zIndex = 999;
+}
+
+signup_form?.addEventListener('click',chooseform_Wrapper2);
+
+const chooseform2 = (e) => {
+	e.stopPropagation();
+}
+
+signuphelp?.addEventListener('click',chooseform2)
+
+const logout_form = document.querySelector('.logout-right-now')
+const logout_btn =document.querySelector('.fh5co-main-menu-logout');
+
+
+const chooseLogout = () => {
+	
+	logout_form.style.display = 'flex';
+}
+
+logout_btn?.addEventListener('click',chooseLogout)
+
+const outlogout = document.querySelector('.out-logout-vaccine');
+const outcancellogout = document.querySelector('.out-cancel-logout');
+const logoutnow = document.querySelector('.logout-right-now-pls');
+const outlogout2 = () => {
+	logout_form.style.display = 'none';
+}
+
+outlogout?.addEventListener('click',outlogout2)
+outcancellogout?.addEventListener('click',outlogout2)
+logout_form?.addEventListener('click',outlogout2)
+
+const notoutnow = (e) => {
+	e.stopPropagation();
+}
+
+logoutnow?.addEventListener('click',notoutnow)

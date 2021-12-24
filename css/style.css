@@ -1330,8 +1330,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .create-vaccine-filter{
   display: flex;
   align-items: center;
-  width: 290px;
-  justify-content: space-between;
+  
+  
 }
 .create-vaccine-filter-number{
   font-size: 16px;
@@ -1346,6 +1346,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   align-items: center;
   justify-content: space-between;
   width: 48px;
+  margin-right:10px;
 }
 .create-vaccine-filter-num {
   display: inline-block;
@@ -1393,7 +1394,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   text-align: center;
   border-collapse: collapse;
   overflow: hidden;
-  box-shadow: 0 2px 4px #8A8D90;  
+  box-shadow: 0 2px 4px #8A8D90;
+  border-radius : 0.5em;
 }
 
 .vaccine-table th {
@@ -1486,6 +1488,9 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   border-radius: 5px;
   border:none;
 }
+
+
+
 .vaccine-delete-button-1 button:first-child{
   border: 1px solid #2D82B8;
   color:#2D82B8;
@@ -1539,7 +1544,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   background-color: #EBF3F6;
   border-radius: 10px;
   height: 100%;
-  /* margin-left: 289px; */
+  margin-bottom: 50px;
 }
 
 
@@ -1942,7 +1947,7 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   text-decoration: none;
   letter-spacing: none;
   text-transform: none;
-  font-size: 14px;
+  font-size: 1px;
   font-weight: 300;
   transition: 0.3s;
   font-family: "Roboto", Arial, sans-serif;
@@ -2266,7 +2271,8 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 .vaccine-registration-body{
-  padding:0.5em;  
+  padding:0.5em;
+  padding-bottom: 2.5em;  
 }
 
 .vaccine-registration-vaccination-text{
@@ -2373,6 +2379,21 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 .vaccine-table td:first-child{
   text-align: left;
   padding-left: 4em;
+}
+
+.vaccine-table-citizen td:last-child{
+    width: 100px;
+    height: 101%;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.vaccine-table-health td:last-child{
+  width: 100px;
+    height: 101%;
+    display: inline-flex;
+    align-items: center;
 }
 
 
@@ -2500,10 +2521,10 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 
 @media screen and (max-width: 1060px) {
   .vaccine-registration-body-vaccination-all input {
-    width: 28em;
+    width: 26em;
   }
   .vaccine-registration-vaccination-sl {
-    width: 28em;
+    width: 26em;
   }
   .registration-process-comboitem-text {
     font-size: 1.5rem;
@@ -2942,11 +2963,12 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 
   .fh5co-body-edit-row span{
      font-size: 1.5rem;
-     margin-right: 3em;
+     width: 100%;
   }
   .fh5co-body-create-row span {
     font-size: 1.5rem;
-    margin-right: 1.5em;
+    width: 100%;
+    
   }
 
 
@@ -3177,18 +3199,33 @@ a:hover,a:focus{
   }
 
   
+  @media screen and (max-width: 943px) {
 
+    .fh5co-body-edit-item-select{
+       width: 23em;
+    }
+    .fh5co-main-menu-nav-item {
+      display: flex;
+      align-items: center;
+    }
+    .fh5co-footer {
+      display: none;
+    }
+    .accordion-button {
+      margin-left: 0.8em;
+    }
+  }
   @media screen and (max-width: 880px) {
 
     .fh5co-body-edit-item-select{
-       width: 15em;
+       width: 23em;
     }
   
   }
   @media screen and (max-width: 580px) {
 
     .fh5co-body-edit-item-select{
-       width: 13em;
+       width: 23em;
     }
   
   }
@@ -3241,22 +3278,7 @@ a:hover,a:focus{
 }
 
 
-@media screen and (max-width: 943px) {
 
-  .fh5co-body-edit-item-select{
-     width: 13em;
-  }
-  .fh5co-main-menu-nav-item {
-    display: flex;
-    align-items: center;
-  }
-  .fh5co-footer {
-    display: none;
-  }
-  .accordion-button {
-    margin-left: 0.8em;
-  }
-}
 
 @media (max-width: 767px) {
   .col-md-3 {
@@ -3285,3 +3307,73 @@ a:hover,a:focus{
 .vaccine-table-district{
 
 }
+
+.fh5co-body-create-item-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 880px) {
+
+  .fh5co-body-create-item input{
+     width: 15em;
+  }
+
+}
+@media screen and (max-width: 580px) {
+
+  .fh5co-body-create-item input{
+     width: 10em;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+
+  .fh5co-body-edit-item input{
+     width: 10em;
+  }
+
+}
+
+.vaccine-registration-vaccination-sl:hover {
+  border-radius: 6px;
+}
+
+.vaccine-consent-form-confirm {
+  margin-top:30px;
+}
+
+.home-health-delaration {
+  margin-bottom: 10px;
+}
+
+.vaccine-delete-button-1 button:last-child {
+  background-color: #EF6565;
+  color:white;
+  font-weight: 500;
+  margin-right:20px;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 5px;
+  border:none;
+}
+
+.vaccine-delete-button-1 button a {
+  color:white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+

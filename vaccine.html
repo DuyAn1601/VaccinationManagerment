@@ -44,7 +44,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -62,7 +62,9 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 	<div id="fh5co-page">
@@ -97,7 +99,7 @@
 						</li>
 						<li class="login-pls fh5co-main-menu-nav-item">
 							<i class="color-white-pls fas fa-sign-out-alt"></i>
-							<a href="#" class="fh5co-main-menu-login">Login</a>
+							<a href="#" class="fh5co-main-menu-logout">Logout</a>
 						</li>
 				</ul>
 			</nav>
@@ -123,11 +125,7 @@
 					<div class="create-vaccine" data-animate-effect="fadeInLeft">
 						<button class="fh5co-head-create-chuyen">CREATE NEW</button>
 						<div class="create-vaccine-filter">
-							<div class="create-vaccine-filter-number">
-								<i class="create-vaccine-filter-num-color fas fa-chevron-left"></i>
-								<div class="create-vaccine-filter-num">1-5/5</div>
-								<i class="create-vaccine-filter-num-color fas fa-chevron-right"></i>
-							</div>
+							
 							<div class="create-vaccine-filter-num-color create-vaccine-filter-num-colorx">
 								<i class="fas fa-list-alt"></i>
 								<i class=" fas fa-share-alt-square"></i>
@@ -216,7 +214,76 @@
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
+						<tr  class="vaccine-table-row">
+							<td>AstraZeneca</td>
+							<td>Anh</td>
+							<td>12</td>
+							<td>6</td>
+							<td>2</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>AstraZeneca</td>
+							<td>Anh</td>
+							<td>12</td>
+							<td>6</td>
+							<td>2</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>AstraZeneca</td>
+							<td>Anh</td>
+							<td>12</td>
+							<td>6</td>
+							<td>2</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>AstraZeneca</td>
+							<td>Anh</td>
+							<td>12</td>
+							<td>6</td>
+							<td>2</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						<tr  class="vaccine-table-row">
+							<td>AstraZeneca</td>
+							<td>Anh</td>
+							<td>12</td>
+							<td>6</td>
+							<td>2</td>
+							<td>
+								<i class="edit-real fas fa-pen"></i>
+								<i class="delete-real fas fa-trash"></i>
+							</td>
+						</tr>
+						
+						
 					</table>
+					<div class="container">
+               
+						<ul class="pagination">
+						  <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+						  <li class="page-item"><a class="page-link" href="#">1</a></li>
+						  <li class="page-item"><a class="page-link" href="#">2</a></li>
+						  <li class="page-item"><a class="page-link" href="#">3</a></li>
+						  <li class="page-item"><a class="page-link" href="#">4</a></li>
+						  <li class="page-item"><a class="page-link" href="#">5</a></li>
+						  <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+						</ul>
+					  </div>
 				</div>
             </div>
         </div>
@@ -338,6 +405,21 @@
 			
             
         </div>
+		<div class="vaccine-delete-wrapper logout-right-now">
+			<div class="vaccine-delete logout-right-now-pls" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Logout</span>
+					<i class=" out-delete-vaccine out-logout-vaccine fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Are you sure you want to logout?
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
+					<button><a href="./home.html">Logout</a></button>
+				</div>
+			</div>
+		</div>
 		
 						
         		

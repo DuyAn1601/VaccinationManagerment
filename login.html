@@ -132,27 +132,32 @@ function SignIn({getUserName, getUserPass}) {
             
             <div class="signIn-welcome">
                 <img src="./images/bacsivacoyta.png" alt="Movie Time" />
-                <h1>Organization login</h1>
+                <h1>Organization Sign Up</h1>
             </div>
             <div class="signIn_form">
               <div class="triangle"></div>
               <i class="fas fa-times-circle"></i><br />
               <img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121 1.png" alt="Logo" />
-              <h1>LOGIN</h1>
-              <input type="email" placeholder="Email or phone number" />
+              <h1>SIGN UP</h1>
+              <input type="number" placeholder="Organization phone number">
+              <input type="email" placeholder="Email"/>
+              <input type="text" placeholder="Admin code or Medical Code"/>
               <div class="signIn_password">
                 <input type='password' placeholder="Password" />
                 <i class="fas fa-eye" ></i>
               </div>
-              <div class="signIn_check">
-                <input type="checkbox" name="remember" />
-                <label htmlFor="remember">Remember</label>
+              <div class="signIn_password">
+                <input type='password' placeholder="Confirm password" />
+                <i class="fas fa-eye" ></i>
               </div>
-              <a href="./adminhome.html"><button>Login</button></a>
-              <a href="#">Forgot password</a>
+              <div class="signIn_check">
+                <input type="checkbox" name="Agree" />
+                <label htmlFor="Agree"> Agree to the terms of Vaccination Management</label>
+              </div>
+              <a href="./adminhome.html"><button>Sign up</button></a>
               <div class="signIn_toSignUp">
-                <span>Or sign up for an account</span>
-                <button>Register</button>
+                <span>Already have an account?</span>
+                <button>Login</button>
               </div>
             </div>
           </div>
