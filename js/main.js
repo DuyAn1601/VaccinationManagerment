@@ -191,7 +191,14 @@ const handleoutdelete2 = ()=> {
 }
 deletewrapper?.addEventListener('click',handleoutdelete2)
 
+const regvaccineappear = document.querySelector('.vaccine-table-search');
+const search_main_btn = document.querySelector('.search-main-btn-2');
 
+const appeartablereg = () => {
+	regvaccineappear.style.display='flex';
+}
+
+search_main_btn?.addEventListener('click',appeartablereg)
 
 // Onclick edit vaccine
 let editicon = document.querySelectorAll('.edit-real');
@@ -259,11 +266,14 @@ const form2 = document.querySelector('.search-main-main-4');
 const obtaintolookup = () => {
 	form1.style.display='flex';
 	form2.style.display='none';
+	regvaccineappear.style.display='none';
 }
 
 const lookuptoobtain = () => {
 	form1.style.display='none';
+	
 	form2.style.display='flex';
+	
 }
 
 option1?.addEventListener('click',obtaintolookup)
@@ -398,4 +408,229 @@ const notoutnow = (e) => {
 }
 
 logoutnow?.addEventListener('click',notoutnow)
+
+const forgotbutton = document.querySelector('.forgot-password-btn');
+const forgot_form = document.querySelector('.forgot-password-wrap')
+const chooseForgotbtn = () => {
+	login_form.style.display='none';
+	forgot_form.style.display = 'flex';
+}
+forgotbutton?.addEventListener('click',chooseForgotbtn)
+const forgotPassword = document.querySelector('.forgot-password');
+const outcancelforgot = document.querySelector('.out-cancel-forgot');
+const forgotpwreal = document.querySelector('.forgot-password-sure');
+
+const forgotPasswordhandle = () => {
+	forgot_form.style.display = 'none';
+}
+
+forgotPassword?.addEventListener('click',forgotPasswordhandle)
+outcancelforgot?.addEventListener('click',forgotPasswordhandle)
+forgot_form?.addEventListener('click',forgotPasswordhandle)
+
+const forgot = (e) => {
+	e.stopPropagation();
+}
+
+forgotpwreal?.addEventListener('click',forgot)
+
+const submit_fg_btn = document.querySelector('.submit-btn-forgot');
+const forgot_form_success = document.querySelector('.submit-forgot-password-wrap')
+
+
+const chooseSubmitForgotBtn = () => {
+	forgot_form_success.style.display='flex';
+	forgot_form.style.display = 'none';
+}
+
+submit_fg_btn?.addEventListener('click',chooseSubmitForgotBtn)
+
+const forgotPasswordSc = document.querySelector('.forgot-password-sc');
+const outcancelforgotsc = document.querySelector('.out-cancel-forgot-sc');
+const forgotpwrealsc = document.querySelector('.forgot-password-sure-sc');
+
+const forgotPasswordSchandle = () => {
+	forgot_form_success.style.display = 'none';
+}
+
+forgotPasswordSc?.addEventListener('click',forgotPasswordSchandle)
+outcancelforgotsc?.addEventListener('click',forgotPasswordSchandle)
+forgot_form_success?.addEventListener('click',forgotPasswordSchandle)
+
+const forgotsc = (e) => {
+	e.stopPropagation();
+}
+
+forgotpwrealsc?.addEventListener('click',forgotsc);
+const success = document.querySelector('.success-wrap')
+const confirmRegistration = document.querySelector('.vaccine-consent-form-agree-btn-3');
+const confirmTrueReg = () => {
+	success.style.display="flex";
+}
+
+confirmRegistration?.addEventListener('click',confirmTrueReg)
+
+const scPopup = document.querySelector('.successfull-popup');
+const outSc = document.querySelector('.out-sc');
+const sureSc = document.querySelector('.sure-sc');
+
+const Successchandle = () => {
+	success.style.display = 'none';
+}
+
+scPopup?.addEventListener('click',Successchandle)
+outSc?.addEventListener('click',Successchandle)
+success?.addEventListener('click',Successchandle)
+
+const Scsc = (e) => {
+	e.stopPropagation();
+}
+
+sureSc?.addEventListener('click',Scsc);
+
+const backToLogin = document.querySelector('.backlogin-btn');
+const backToLoginhandle = () => {
+	
+	forgot_form_success.style.display = 'none';
+	login_form.style.display='flex';
+}
+
+backToLogin?.addEventListener('click',backToLoginhandle)
+
+const sendMessage = document.querySelector('.btn-message')
+
+sendMessage?.addEventListener('click',confirmTrueReg)
+//eye_password
+var eye1 = document.querySelector(".signup-psw-1");
+	var eye2 = document.querySelector(".signup-psw-2");
+	var input1 = document.querySelector(".input-psw-signup");
+	
+	var eye3 = document.querySelector(".confirm-psw-1");
+	var eye4 = document.querySelector(".confirm-psw-2");
+	var input2 = document.querySelector(".input-psw-confirm");
+	
+	var eye5 = document.querySelector(".signin-psw-1");
+	var eye6 = document.querySelector(".signin-psw-2");
+	var input3 = document.querySelector(".input-psw-signin");
+	
+	function myFunction1() {				
+	if (input1.type === "password") {
+		eye1.style.display = "none";
+		eye2.style.display = "block";
+		input1.type = "text";
+	} else {
+		input1.type = "password";	
+		eye2.style.display = "none";
+		eye1.style.display = "block";
+	}
+	}
+	function myFunction2() {
+		if (input1.value != "") {
+			if (input1.type === "password") {				
+				eye2.style.display = "block";			
+			} else {				
+				eye1.style.display = "block";
+			}
+		} else {
+			eye1.style.display = "none";
+			eye2.style.display = "none";
+		}		
+	}
+
+	function myFunction3() {	
+	if (input2.type === "password") {
+		eye3.style.display = "none";
+		eye4.style.display = "block";
+		input2.type = "text";
+	} else {
+		input2.type = "password";
+		eye4.style.display = "none";
+		eye3.style.display = "block";
+	}
+	}
+	function myFunction4() {
+		if (input2.value != "") {
+			if (input2.type === "password") {				
+				eye4.style.display = "block";			
+			} else {				
+				eye3.style.display = "block";
+			}
+		} else {
+			eye3.style.display = "none";
+			eye4.style.display = "none";
+		}		
+	}
+	function myFunction5() {	
+	if (input3.type === "password") {
+		eye5.style.display = "none";
+		eye6.style.display = "block";
+		input3.type = "text";
+	} else {
+		input3.type = "password";
+		eye6.style.display = "none";
+		eye5.style.display = "block";
+	}
+	}
+	function myFunction6() {
+		if (input3.value != "") {
+			if (input3.type === "password") {				
+				eye6.style.display = "block";			
+			} else {				
+				eye5.style.display = "block";
+			}
+		} else {
+			eye5.style.display = "none";
+			eye6.style.display = "none";
+		}		
+	}	
+
+
+//filter_report
+/*
+Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
+*/
+$(document).ready(function(){
+    $('.filterable .btn-filter').click(function(){
+        var $panel = $(this).parents('.filterable'),
+        $filters = $panel.find('.filters input'),
+        $tbody = $panel.find('.table tbody');
+        if ($filters.prop('disabled') == true) {
+            $filters.prop('disabled', false);
+            $filters.first().focus();
+        } else {
+            $filters.val('').prop('disabled', true);
+            $tbody.find('.no-result').remove();
+            $tbody.find('tr').show();
+        }
+    });
+
+    $('.filterable .filters input').keyup(function(e){
+        /* Ignore tab key */
+        var code = e.keyCode || e.which;
+        if (code == '9') return;
+        /* Useful DOM data and selectors */
+        var $input = $(this),
+        inputContent = $input.val().toLowerCase(),
+        $panel = $input.parents('.filterable'),
+        column = $panel.find('.filters th').index($input.parents('th')),
+        $table = $panel.find('.table'),
+        $rows = $table.find('tbody tr');
+        /* Dirtiest filter function ever ;) */
+        var $filteredRows = $rows.filter(function(){
+            var value = $(this).find('td').eq(column).text().toLowerCase();
+            return value.indexOf(inputContent) === -1;
+        });
+        /* Clean previous no-result if exist */
+        $table.find('tbody .no-result').remove();
+        /* Show all rows, hide filtered ones (never do that outside of a demo ! xD) */
+        $rows.show();
+        $filteredRows.hide();
+        /* Prepend no-result row if all rows are filtered */
+        if ($filteredRows.length === $rows.length) {
+            $table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="'+ $table.find('.filters th').length +'">No result found</td></tr>'));
+        }
+    });
+});
+
+
 

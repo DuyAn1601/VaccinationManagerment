@@ -41,7 +41,7 @@
 	
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
@@ -82,13 +82,9 @@
 						<i class="fas fa-home"></i>
 						<a href="./adminHome.html">Home</a>
 						</li>
-						<li class="fh5co-main-menu-nav-item">
+						<li class="fh5co-main-menu-nav-item-report fh5co-main-menu-nav-item">
 							<i class="fas fa-file-alt"></i>
 							<a class ="vaccine-regis" href="./adminReport.html">Report</a>
-						</li>
-						<li class="fh5co-main-menu-nav-item">
-							<i class="fas fa-cog"></i>
-							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
 						</li>
 						<li class="fh5co-main-menu-nav-item">
 							<i class="fas fa-share-square"></i>
@@ -102,7 +98,7 @@
 			</nav>
 
 			<div class="fh5co-footer">
-				<a class="fh5co-footer-help"href="">Need help?</a>
+				<a class="fh5co-footer-help" href="./contact.html">Need help?</a>
 				<div class="fh5co-footer-contact">
 					<p>+84 356798098</p>
 					<p>altteam.help@gmail.com</p>
@@ -110,7 +106,7 @@
 			</div>
 		</aside>
         <div id="fh5co-main">
-			<div class="fh5co-narrow-content">
+			<div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
 				<div class="fh5co-header">
 					<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Vaccine Batch</h2>
 					<div class="fh5co-heading-search"> 
@@ -120,7 +116,7 @@
                 </div>
 				<div class="create-table-all" data-animate-effect="fadeInLeft">
 					<div class="create-vaccine" data-animate-effect="fadeInLeft">
-						<button class="fh5co-head-create-chuyen">CREATE NEW</button>
+						<button class="fh5co-head-create-chuyen btn-green-hover">CREATE NEW</button>
 						<div class="create-vaccine-filter">
 							
 							<div class="create-vaccine-filter-num-color create-vaccine-filter-num-colorx">
@@ -134,8 +130,9 @@
 							</select>
 						</div>
 					</div>
-					<table  class="vaccine-table" data-animate-effect="fadeInLeft">
-						<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
+					<table  class="vaccine-table table-hover" data-animate-effect="fadeInLeft">
+						<thead>
+							<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 							<th>
 								Vaccine
 							</th>
@@ -155,7 +152,9 @@
 							   
 							</th>
 						</tr>
-						<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
+						</thead>
+						<tbody>
+							<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
 							<td>AstraZeneca</td>
 							<td>14-11-2021</td>
 							<td>2</td>
@@ -266,6 +265,8 @@
 								<i class="delete-real fas fa-trash"></i>
 							</td>
 						</tr>
+						</tbody>
+						
 					</table>
 					<div class="container">
                
@@ -296,7 +297,7 @@
 						<div class="fh5co-body-edit-vaccine">
 							<div class="fh5co-body-edit-row">
 								<span>Vaccine</span>
-								<select name="Vaccine_Batch" id="Vaccine_Batch" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+								<select name="Vaccine_Batch" id="Vaccine_Batch" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl blue-input-form" required>
 									<option value="vaccine" class="vaccine-registration-vaccination-sl-opt" >AstraZenneca</option>
 									<option value="vaccine" class="vaccine-registration-vaccination-sl-opt" >Moderna</option>
 									<option value="vaccine" class="vaccine-registration-vaccination-sl-opt" >Plizer</option>
@@ -304,29 +305,29 @@
 							</div>
 							<div class="fh5co-body-edit-row">
 								<span>ImportedDate</span>
-								<div class="fh5co-body-edit-item">
-									<input type="date" placeholder="Enter date" value="">
+								<div class="fh5co-body-edit-item blue-input-form">
+									<input  type="date" placeholder="Enter date" value="">
 									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
 								<span>Quantity</span>
-								<div class="fh5co-body-edit-item">
-									<input type="number" placeholder="Enter number" value="" min="0">
+								<div class="fh5co-body-edit-item blue-input-form">
+									<input  type="number" placeholder="Enter number" value="" min="0">
 									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
 								<span>ProducedDate</span>
-								<div class="fh5co-body-edit-item">
-									<input type="date" placeholder="Enter date" value="">
+								<div class="fh5co-body-edit-item blue-input-form">
+									<input  type="date" placeholder="Enter date" value="">
 									
 								</div>
 							</div>
 							<div class="fh5co-body-edit-row">
 								<span>ExpiredDate</span>
-								<div class="fh5co-body-edit-item">
-									<input type="date" placeholder="Enter date" value="">
+								<div class="fh5co-body-edit-item blue-input-form">
+									<input  type="date" placeholder="Enter date" value="">
 									
 								</div>
 							</div>
@@ -334,10 +335,10 @@
 					</div>
 					
 					<div class="fh5co-body-edit-btn">
-						<button>Save</button>
-						<button class="fh5co-body-edit-btn-cancel cancel-back-to-vaccine">Cancel</button>
+						<button class="btn-green-hover">Save</button>
+						<button class="fh5co-body-edit-btn-cancel cancel-back-to-vaccine btn-white-hover">Cancel</button>
 					</div>
-					<div class="fh5co-body-edit-backlist">
+					<div class="fh5co-body-edit-backlist lead-2">
 						Back to List
 					</div>
 					
@@ -356,7 +357,7 @@
 						<div class="fh5co-body-create-vaccine" data-animate-effect="fadeInLeft">
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
 								<span>Vaccine</span>
-								<select name="Vaccine_Batch" id="Vaccine_Batch" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl" required>
+								<select name="Vaccine_Batch" id="Vaccine_Batch" class="fh5co-body-edit-item-select vaccine-registration-vaccination-sl blue-input-form" required>
 									<option value="vaccine" class="vaccine-registration-vaccination-sl-opt" >AstraZenneca</option>
 									<option value="vaccine" class="vaccine-registration-vaccination-sl-opt" >Moderna</option>
 									<option value="vaccine" class="vaccine-registration-vaccination-sl-opt" >Plizer</option>
@@ -364,25 +365,25 @@
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
 								<span>ImportedDate</span>
-								<div class="fh5co-body-create-item">
-									<input type="date" placeholder="Enter date" value="">									
+								<div class="fh5co-body-create-item blue-input-form">
+									<input  type="date" placeholder="Enter date" value="">									
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
 								<span>Quantity</span>
-								<div class="fh5co-body-create-item">
-									<input type="number" placeholder="Enter number" value="" min="0">
+								<div class="fh5co-body-create-item blue-input-form">
+									<input  type="number" placeholder="Enter number" value="" min="0">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
 								<span>ProducedDate</span>
-								<div class="fh5co-body-create-item">
-									<input type="date" placeholder="Enter date" value="">
+								<div class="fh5co-body-create-item blue-input-form">
+									<input  type="date" placeholder="Enter date" value="">
 								</div>
 							</div>
 							<div class="fh5co-body-create-row" data-animate-effect="fadeInLeft">
 								<span>ExpiredDate</span>
-								<div class="fh5co-body-create-item">
+								<div class="fh5co-body-create-item blue-input-form">
 									<input type="date" placeholder="Enter date" value="">
 								</div>
 							</div>
@@ -391,10 +392,10 @@
 					
 					
 					<div class="fh5co-body-create-btn">
-						<button>Create</button>
-						<button class="fh5co-body-create-btn-cancel">Cancel</button>
+						<button class="btn-green-hover">Create</button>
+						<button class="fh5co-body-create-btn-cancel btn-white-hover">Cancel</button>
 					</div>
-					<div class="fh5co-body-create-backlist">
+					<div class="fh5co-body-create-backlist lead-2">
 						<a href="#">Back to List</a>
 					</div>
 					
@@ -419,7 +420,7 @@
 				</div>
 				<div class="vaccine-delete-button-1">
 					<button class="out-cancel-vaccine" >Cancel</button>
-					<button>Delete</button>
+					<button class="vaccine-delete-button-1-hover">Delete</button>
 				</div>
 			</div>
 		</div>
@@ -433,8 +434,8 @@
 					Are you sure you want to logout?
 				</div>
 				<div class="vaccine-delete-button-1">
-					<button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
-					<button><a href="./home.html">Logout</a></button>
+					<button class="out-cancel-vaccine out-cancel-logout btn-white-hover" >Cancel</button>
+					<button class="vaccine-delete-button-1-hover"><a href="./home.html">Logout</a></button>
 				</div>
 			</div>
 		</div>

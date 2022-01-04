@@ -41,7 +41,6 @@
 	
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="./css/SignIn.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	
@@ -67,63 +66,69 @@
 	</head>
 	<body>
 	<div id="fh5co-page">
-		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			<nav id="fh5co-main-menu" role="navigation">
-				<div class="head-nav">
-					<h4 class="head-nav-altteam"> ALT TEAM </h4>
-					<hr class="head-nav-hr">
-					<img class="head-nav-img" alt="logo" src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png"> 
-					<h3 class="head-nav-vaccination"><a href="./adminHome.html">VACCINATION MANAGEMENT</a></h3>
-					<p class="head-nav-username">Đào Phương Thảo</p>
-					<p class="head-nav-email">dpthao251@gmail.com</p>
-				</div>
-				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul class="fh5co-main-menu-nav-ul">
+		<!-- Navbar -->
+			<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+				<nav id="fh5co-main-menu" role="navigation">
+					<div class="head-nav">
+						<h4 class="head-nav-altteam"> ALT TEAM </h4>
+						<hr class="head-nav-hr">
+						<img class="head-nav-img" alt="logo" src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png"> 
+						<h3 class="head-nav-vaccination"><a href="./home.html">VACCINATION MANAGEMENT</a></h3>
+						<p class="head-nav-username"></p>
+						<p class="head-nav-email"></p>
+					</div>
+					<div class="fh5co-main-menu-nav">NAVIGATION</div>
+					<ul class="fh5co-main-menu-nav-ul">
 						<li class="fh5co-main-menu-nav-item">
-						<i class="fas fa-home"></i>
-						<a href="./home.html" >Home</a>
+							<i class="fas fa-home"></i>
+							<a href="./home.html">Home</a>
 						</li>
 						<li class="fh5co-main-menu-nav-item">
 							<i class="fas fa-user-plus"></i>
-							<a class ="vaccine-regis" href="./vaccineregistration.html" >Vaccine registration</a>
+							<a class ="vaccine-regis" href="./vaccineregistration.html"  >Vaccine registration</a>
 						</li>
-						<li class="fh5co-main-menu-nav-item">
+						<li class="onhold-item-nav fh5co-main-menu-nav-item">
 							<i class="fas fa-edit"></i>
-							<a class="fh5co-main-menu-nav-white" href="./healthdeclaration.html" style="text-decoration-line: underline">Health declaration</a>
+							<a class="fh5co-main-menu-nav-white" href="./healthdeclaration.html" >Health declaration</a>
 						</li>
 						<div class="accordion accordion-flush" id="accordionFlushExample">
 							<div class="accordion-item">
-							  <h2 class="accordion-header" id="flush-headingOne">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-									<i class="fas fa-search"></i>
-									Search
-									<i class="fas fa-chevron-down"></i>
-								</button>
-							  </h2>
-							  <div id="flush-collapseOne" class="accordion-collapse collapse in" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-								<div class="accordion-body">
-									<div class="option-search-inject fh5co-main-menu-nav-search-opt-a1"><a href="./searchcertificate.html">Obtain your Covid-19 vaccine certificate</a></div>
-									<div class="option-search-inject2 fh5co-main-menu-nav-search-opt-a2"> <a href="./search.html">Look up injection registration</a></div>
+								<h2 class="accordion-header" id="flush-headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+										<i class="fas fa-search"></i>
+											Search
+										<i class="fas fa-chevron-down"></i>
+									</button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse in" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div class="option-search-inject fh5co-main-menu-nav-search-opt-a1">
+											<a href="./searchcertificate.html">Obtain your Covid-19 vaccine certificate</a>
+										</div>
+										<div class="option-search-inject2 fh5co-main-menu-nav-search-opt-a2">
+											<a href="./search.html">Look up injection registration</a>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+						</div>	
 						<li class="login-pls fh5co-main-menu-nav-item">
 							<i class="color-white-pls fas fa-sign-out-alt"></i>
 							<a href="#" class="fh5co-main-menu-login">Login</a>
-						</li>
-				</ul>
-			</nav>
-
-			<div class="fh5co-footer">
-				<a class="fh5co-footer-help"href="">Need help?</a>
-				<div class="fh5co-footer-contact">
-					<p>+84 356798098</p>
-					<p>altteam.help@gmail.com</p>
+						</li>	
+					</ul>
+				</nav>
+				<div class="fh5co-footer">
+					<a class="fh5co-footer-help" href="./contact.html">Need help?</a>
+					<div class="fh5co-footer-contact">
+						<p>+84 356798098</p>
+						<p>altteam.help@gmail.com</p>
+					</div>
 				</div>
-			</div>
-		</aside>
+			</aside>
+			<!-- End of navbar -->		
+
+
 		<div id="fh5co-main" data-animate-effect="fadeInLeft">
 			<div class="fh5co-narrow-content" data-animate-effect="fadeInLeft">
 				<div class="fh5co-header">
@@ -141,7 +146,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="text" name="fullname" placeholder="Fullname" required>
+									<input class="blue-input-form" type="text" name="fullname" placeholder="Fullname" required>
 								</div>
 								<div class="col-md-4 vaccine-registration-body-vaccination-all">
 									<div class="vaccine-registration-body-vaccination">
@@ -150,7 +155,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="gender" id="gender" class="vaccine-registration-vaccination-sl" required>
+									<select name="gender" id="gender" class="vaccine-registration-vaccination-sl blue-input-form" required>
 										<option value="" selected disabled hidden>Choose Gender</option>
 										<option value="gender" class="vaccine-registration-vaccination-sl-opt" >Male</option>
 										<option value="gender" class="vaccine-registration-vaccination-sl-opt" >Female</option>
@@ -164,7 +169,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="date" name="bdaytime" required>
+									<input class="blue-input-form" type="date" name="bdaytime" required>
 								</div>
 								<div class="col-md-4 vaccine-registration-body-vaccination-all">
 									<div class="vaccine-registration-body-vaccination">
@@ -173,7 +178,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="tel" name="usrtel" placeholder="Phone number" required>
+									<input class="blue-input-form" type="tel" name="usrtel" placeholder="Phone number" required>
 									
 								</div>
 							</div>
@@ -185,7 +190,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="email" name="email" placeholder="Email" required>
+									<input class="blue-input-form" type="email" name="email" placeholder="Email" required>
 								</div>
 								<div class="col-md-3-health col-md-3 vaccine-registration-body-vaccination-all">
 									<div class="vaccine-registration-body-vaccination">
@@ -194,7 +199,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="text" name="health insurance number" placeholder="Health insurance number" required>
+									<input class="blue-input-form" type="text" name="health insurance number" placeholder="Health insurance number" required>
 								</div>
 								<div class="col-md-3-health col-md-3 vaccine-registration-body-vaccination-all">
 									<div class="vaccine-registration-body-vaccination">
@@ -203,7 +208,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="text" name="Identification/Citizen identification code/Passport" placeholder="079201023268" required>
+									<input class="blue-input-form" type="text" name="Identification/Citizen identification code/Passport" placeholder="Enter your Identification/Citizen identification code/Passport" required>
 								</div>
 							</div>
 							<div class="row vaccine-registration-information-row1">
@@ -214,7 +219,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="nation" id="nation" class="vaccine-registration-vaccination-sl" required>
+									<select name="nation" id="nation" class="vaccine-registration-vaccination-sl blue-input-form" required>
 										<option value="" selected disabled hidden>Choose Nation</option>
 										<option value="nation" class="vaccine-registration-vaccination-sl-opt" >Kinh</option>
 										<option value="nation" class="vaccine-registration-vaccination-sl-opt" >Chăm</option>
@@ -228,7 +233,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="nationality" id="nationality" class="vaccine-registration-vaccination-sl" required>
+									<select name="nationality" id="nationality" class="vaccine-registration-vaccination-sl blue-input-form" required>
 										<option value="" selected disabled hidden>Choose Nationality</option>
 										<option value="nationality" class="vaccine-registration-vaccination-sl-opt" >Việt Nam</option>
 										<option value="nationality" class="vaccine-registration-vaccination-sl-opt" >Lào</option>
@@ -242,7 +247,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="text" name="occupation" placeholder="Occupation" required>
+									<input class="blue-input-form" type="text" name="occupation" placeholder="Occupation" required>
 								</div>
 								<div class="col-md-4 vaccine-registration-body-vaccination-all">
 									<div class="vaccine-registration-body-vaccination">
@@ -251,7 +256,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<input type="text" name="workplace" placeholder="Workplace" required>
+									<input class="blue-input-form" type="text" name="workplace" placeholder="Workplace" required>
 									
 								</div>
 								
@@ -264,7 +269,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="city" id="city" class="vaccine-registration-vaccination-sl" required>
+									<select name="city" id="city" class="vaccine-registration-vaccination-sl blue-input-form" required>
 										<option value="" selected disabled hidden>Choose City</option>
 										<option value="city" class="vaccine-registration-vaccination-sl-opt" >Thành phố Hồ Chí Minh</option>
 										<option value="city" class="vaccine-registration-vaccination-sl-opt" >Trà Vinh</option>
@@ -278,7 +283,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="district" id="district" class="vaccine-registration-vaccination-sl" required>
+									<select name="district" id="district" class="vaccine-registration-vaccination-sl blue-input-form" required>
 										<option value="" selected disabled hidden>Choose District</option>
 										<option value="district" class="vaccine-registration-vaccination-sl-opt" >Gò Vấp</option>
 										<option value="district" class="vaccine-registration-vaccination-sl-opt" >Bình Thạnh</option>
@@ -292,7 +297,7 @@
 										</span>
 										<span class="vaccine-registration-vaccination-force">(*)</span>
 									</div>
-									<select name="ward" id="ward" class="vaccine-registration-vaccination-sl" required>
+									<select name="ward" id="ward" class="vaccine-registration-vaccination-sl blue-input-form" required>
 										<option value="" selected disabled hidden>Choose Ward</option>
 										<option value="ward" class="vaccine-registration-vaccination-sl-opt" >Phường 1</option>
 										<option value="ward" class="vaccine-registration-vaccination-sl-opt" >Phường Tân Phú</option>
@@ -305,7 +310,8 @@
 					
 					<div class="vaccine-registration-anamnesis">
 						<span class="vaccine-registration-information-text">2. Within the past 14 days, have you had:</span>
-						<table  class="vaccine-table" data-animate-effect="fadeInLeft">
+						<table  class="vaccine-table table-hover" data-animate-effect="fadeInLeft">
+							<thead>
 							<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
 								<th>
 									Health delaration
@@ -321,6 +327,8 @@
 								</th>
 								
 							</tr>
+							</thead>
+							<tbody>
 							<tr  class="vaccine-table-row" data-animate-effect="fadeInLeft">
 								<td>1. In the past 14 days, have you visited any province/city, country/territory</td>
 								<td><input type="radio" name="anaphylaxis " value="Yes" ></td>
@@ -351,6 +359,8 @@
 								<td class="vaccine-table-no"><input type="radio" name="people with symptoms" value="No" checked></td>
 								<td><input type="radio" name="people with symptoms" value="Undefined" ></td>
 							</tr>
+							</tbody>
+							
 							
 						</table>
 						<div class="vaccine-consent-form-agree vaccine-consent-form-confirm">
@@ -359,105 +369,137 @@
 						</div>
 					</div>
 					<div class="vaccine-consent-form-agree-btn">
-						<input class="vaccine-consent-form-agree-btn-2" type="button"  onclick="Redirect()" value="Cancel">
-						<input class="vaccine-consent-form-agree-btn-3" type="submit"  value="Confirm"> 
+						<input class="btn-white-hover-2 vaccine-consent-form-agree-btn-2" type="button"  onclick="Redirect()" value="Cancel">
+						<input class="btn-green-hover vaccine-consent-form-agree-btn-3" type="submit"  value="Confirm"> 
 					</div>
-					</div>
-					
-				</form>
-				
-				
+					</div>					
+				</form>							
 			</div>
-		</div>
-			
+		</div>			
     </div>
-	<div class="SignUpWrap" >
-		<div class="SignUp" >            
-		  <div class="SignUp-welcome">
-			  <img src="./images/bacsivacoyta.png" alt="Movie Time" />
-			  <h1>Organization Sign Up</h1>
-		  </div>
-		  <div class="SignUp_form">
-			<div class="triangle"></div>
-			<i class="fas fa-times-circle" aria-hidden="true"></i>
-			<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121 1.png" alt="Logo" />
-			<h1>SIGN UP</h1>
-			<input type="text" placeholder="Organization phone number">
-			<input type="email" placeholder="Email"/>
-			<div class="SignUp_password">
-			  <input type='password' id="myInput" placeholder="Password" />
-			  <i class="fas fa-eye" aria-hidden="true" onclick="myFunction()"></i>
-			</div>
-			<div class="SignUp_password">
-				<input type='password' placeholder="Confirm Password" />
-			</div>
-			<div class="SignUp_check">
-			  <input type="checkbox" name="Agree" />
-			  <label htmlFor="Agree"> Agree to the terms of Vaccination Management</label>
-			</div>
-			<a href="#"><button>Sign up</button></a>
-			<div class="SignUp_toSignUp">
-			  <span>Already have an account?</span>
-			  <button class="up-to-login" >Login</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	<div class="signInWrap" >
-		<div class="signIn" >
-		  
-		  <div class="signIn-welcome">
-			  <img src="./images/bacsivacoyta.png" alt="Movie Time" />
-			  <h1>Organization login</h1>
-		  </div>
-		  <div class="signIn_form">
-			
-			<i class="fas fa-times-circle"></i><br />
-			<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121 1.png" alt="Logo" />
-			<h1>LOGIN</h1>
-			<input type="email" placeholder="Email or phone number" />
-			<div class="signIn_password">
-			  <input type='password'  id="myInputLogin" placeholder="Password" />
-			  <i class="fas fa-eye" aria-hidden="true" onclick="myFunction2()" ></i>
-			</div>
-			<div class="signIn_check">
-			  <input type="checkbox" name="remember" />
-			  <label htmlFor="remember">Remember</label>
-			</div>
-			<a href="./adminHome.html"><button>Login</button></a>
-			<a href="#">Forgot password</a>
-			<div class="signIn_toSignUp">
-			  <span>Or sign up for an account</span>
-			  <button class="up-to-register">Register</button>
-			</div>
-		  </div>
-		</div>
-	</div>
-  <div class="vaccine-delete-wrapper">
 
-  </div>
-</div>
-<script>
-	function myFunction() {
-	var x = document.getElementById("myInput");
-	if (x.type === "password") {
-		x.type = "text";
-	} else {
-		x.type = "password";
-	}
-	}
-</script>
-
-<script>
-function myFunction2() {
-var y = document.getElementById("myInputLogin");
-if (y.type === "password") {
-	y.type = "text";
-} else {
-	y.type = "password";
-}
-}
-</script>
+	<!-- Signup_signin -->
+		<div class="SignUpWrap" >
+			<div class="SignUp" >            
+				<div class="SignUp-welcome">
+					<img src="./images/bacsivacoyta.png" alt="Movie Time" />
+					<h1>Organization Sign Up</h1>
+				</div>
+				<div class="SignUp_form">
+					<div class="triangle"></div>
+						<i class="btn-exit fas fa-times-circle" aria-hidden="true"></i>
+						<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png" alt="Logo" />
+						<h1>SIGN UP</h1>
+						<input type="text" class="forgot-password-input" placeholder="Organization phone number">
+						<input type="email" class="forgot-password-input" placeholder="Email"/>
+						<div class="SignUp_password">
+						<input type='password' class="forgot-password-input input-psw-signup" oninput="myFunction2()" placeholder="Password" />
+						<i class="signup-psw-1 fas fa-eye" aria-hidden="true" onclick="myFunction1()"></i>
+						<i class="signup-psw-2 fas fa-eye-slash" onclick="myFunction1()"></i>
+					</div>
+					<div class="SignUp_password">
+						<input type='password' class="forgot-password-input input-psw-confirm" oninput="myFunction4()" placeholder="Confirm password" />
+						<i class="confirm-psw-1 fas fa-eye" aria-hidden="true" onclick="myFunction3()"></i>
+						<i class="confirm-psw-2 fas fa-eye-slash" onclick="myFunction3()"></i>				
+					</div>
+					<div class="SignUp_check">
+						<input type="checkbox" name="Agree" />
+						<label htmlFor="Agree"> Agree to the terms of Vaccination Management</label>
+					</div>
+					<a href="#"><button class="btn-hover-blue btn-hover-red">Sign up</button></a>
+					<div class="SignUp_toSignUp">
+						<span>Already have an account?</span>
+						<button class="btn-hover-blue up-to-login" >Login</button>
+					</div>
+				</div>
+			</div>
+	  	</div>	  
+		<div class="signInWrap" >
+			<div class="signIn" >			
+				<div class="signIn-welcome">
+					<img src="./images/bacsivacoyta.png" alt="Movie Time" />
+					<h1>Organization login</h1>
+				</div>
+				<div class="signIn_form">				
+					<i class="btn-exit fas fa-times-circle"></i><br />
+					<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png" alt="Logo" />
+					<h1>LOGIN</h1>
+					<input class="forgot-password-input" type="email" placeholder="Email or phone number" />
+					<div class="signIn_password">
+						<input type='password' class="forgot-password-input input-psw-signin" oninput="myFunction6()" placeholder="Password" />
+						<i class="signin-psw-1 fas fa-eye" aria-hidden="true" onclick="myFunction5()"></i>
+						<i class="signin-psw-2 fas fa-eye-slash" onclick="myFunction5()"></i>
+					</div>
+					<div class="signIn_check">
+						<input type="checkbox" name="remember" />
+						<label htmlFor="remember">Remember</label>
+					</div>
+					<a href="./adminHome.html" ><button class="btn-hover-blue" >Login</button></a>
+					<a class="forgot-password-btn" href="#">Forgot password</a>
+					<div class="signIn_toSignUp">
+						<span>Don't have an account?</span>
+						<button class="btn-green-hover up-to-register">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</div>  
+		<div class="vaccine-delete-wrapper forgot-password-wrap">
+			<div class="vaccine-delete forgot-password-sure" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Forgot password?</span>
+					<i class=" out-delete-vaccine forgot-password fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Please enter your email address or mobile number to search your account.
+				</div>
+				<form action="">
+					<input class="forgot-password-input" type="text" placeholder="Email or phone number" required >
+					<div class="vaccine-delete-button-1">
+						<button class="out-cancel-vaccine out-cancel-forgot" >Cancel</button>
+						<button  class="vaccine-delete-button-1-hover"><a class="submit-btn-forgot" href="#" >Submit</a></button>
+					</div>
+				</form>				
+			</div>
+		</div>
+		<div class="vaccine-delete-wrapper submit-forgot-password-wrap">
+			<div class="vaccine-delete forgot-password-sure-sc" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Successful!</span>
+					<i class=" out-delete-vaccine forgot-password-sc fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Please check your email address or your phone to create new an account.
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-forgot-sc" >Cancel</button>
+					<div class="backlogin-btn">
+						<button class="vaccine-delete-button-1-hover">
+							<a href="#"> Back to login</a>
+						</button>
+					</div>						
+				</div>
+			</div>
+		</div>
+		<div class="vaccine-delete-wrapper success-wrap">
+			<div class="vaccine-delete sure-sc" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Successful</span>
+					<i class=" out-delete-vaccine successfull-popup fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Your health declaration is recorded. Please wait for announcement about your health.
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-sc" >Cancel</button>
+					<div class="backlogin-btn">
+						<button class="vaccine-delete-button-1-hover">
+							<a href="./home.html"> Back to home</a>
+						</button>
+					</div>						
+				</div>
+			</div>
+		</div>
+		<!-- End-of-signup-signin -->
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>

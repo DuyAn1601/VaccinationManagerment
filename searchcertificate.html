@@ -43,7 +43,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -54,10 +54,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
-	<link rel="stylesheet" href="./css/SignIn.css">
-	<link rel="stylesheet" href="./css/SignUp.css">
-
+	
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -68,208 +65,371 @@
 	</head>
 	<body>
 	<div id="fh5co-page">
-		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-			<nav id="fh5co-main-menu" role="navigation">
-				<div class="head-nav">
-					<h4 class="head-nav-altteam"> ALT TEAM </h4>
-					<hr class="head-nav-hr">
-					<img class="head-nav-img" alt="logo" src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png"> 
-					<h3 class="head-nav-vaccination"><a href="./adminHome.html">VACCINATION MANAGEMENT</a></h3>
-					<p class="head-nav-username">Đào Phương Thảo</p>
-					<p class="head-nav-email">dpthao251@gmail.com</p>
-				</div>
-				<div class="fh5co-main-menu-nav">NAVIGATION</div>
-				<ul class="fh5co-main-menu-nav-ul">
+		<!-- Navbar -->
+			<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+				<nav id="fh5co-main-menu" role="navigation">
+					<div class="head-nav">
+						<h4 class="head-nav-altteam"> ALT TEAM </h4>
+						<hr class="head-nav-hr">
+						<img class="head-nav-img" alt="logo" src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png"> 
+						<h3 class="head-nav-vaccination"><a href="./home.html">VACCINATION MANAGEMENT</a></h3>
+						<p class="head-nav-username"></p>
+						<p class="head-nav-email"></p>
+					</div>
+					<div class="fh5co-main-menu-nav">NAVIGATION</div>
+					<ul class="fh5co-main-menu-nav-ul">
 						<li class="fh5co-main-menu-nav-item">
-						<i class="fas fa-home"></i>
-						<a href="./home.html">Home</a>
+							<i class="fas fa-home"></i>
+							<a href="./home.html">Home</a>
 						</li>
 						<li class="fh5co-main-menu-nav-item">
 							<i class="fas fa-user-plus"></i>
 							<a class ="vaccine-regis" href="./vaccineregistration.html"  >Vaccine registration</a>
 						</li>
-						<li class="fh5co-main-menu-nav-item" style="margin-bottom:11px">
+						<li class="fh5co-main-menu-nav-item">
 							<i class="fas fa-edit"></i>
 							<a class="fh5co-main-menu-nav-white" href="./healthdeclaration.html" >Health declaration</a>
 						</li>
 						<div class="accordion accordion-flush" id="accordionFlushExample">
 							<div class="accordion-item">
-							  <h2 class="accordion-header" id="flush-headingOne">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-									<i class="fas fa-search"></i>
-									Search
-									<i class="fas fa-chevron-down"></i>
-								</button>
-							  </h2>
-							  <div id="flush-collapseOne" class="accordion-collapse collapse in" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-								<div class="accordion-body">
-									<div class="option-search-inject fh5co-main-menu-nav-search-opt-a1"><a href="#">Obtain your Covid-19 vaccine certificate</a></div>
-									<div class="option-search-inject2 fh5co-main-menu-nav-search-opt-a2"> <a href="#">Look up injection registration</a></div>
+								<h2 class="accordion-item-search onhold-item-nav-search accordion-header" id="flush-headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+										<i class="fas fa-search"></i>
+											Search
+										<!-- <i class="fas fa-chevron-down"></i> -->
+									</button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse in" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div class="option-search-inject fh5co-main-menu-nav-search-opt-a1">
+											<a href="./searchcertificate.html">Obtain your Covid-19 vaccine certificate</a>
+										</div>
+										<div class="option-search-inject2 fh5co-main-menu-nav-search-opt-a2">
+											<a href="./search.html">Look up injection registration</a>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
+						</div>	
 						<li class="login-pls fh5co-main-menu-nav-item">
 							<i class="color-white-pls fas fa-sign-out-alt"></i>
 							<a href="#" class="fh5co-main-menu-login">Login</a>
-						</li>
-				</ul>
-			</nav>
-
-			<div class="fh5co-footer">
-				<a class="fh5co-footer-help"href="">Need help?</a>
-				<div class="fh5co-footer-contact">
-					<p>+84 356798098</p>
-					<p>altteam.help@gmail.com</p>
+						</li>	
+					</ul>
+				</nav>
+				<div class="fh5co-footer">
+					<a class="fh5co-footer-help" href="./contact.html">Need help?</a>
+					<div class="fh5co-footer-contact">
+						<p>+84 356798098</p>
+						<p>altteam.help@gmail.com</p>
+					</div>
 				</div>
-			</div>
-		</aside>
-		<div class="search-user-main" data-animate-effect="fadeInLeft">
+			</aside>
+			<!-- End of navbar -->
+
+		
+		<div class="search-user-main-2 animate-box" data-animate-effect="fadeInLeft">
 			<div class="search-main-wrapper">
-				<div class="search-main" data-animate-effect="fadeInLeft">
+				<div class="search-main-1 search-main" data-animate-effect="fadeInLeft">
 					<form class="search-main-main-6 search-main-main" data-animate-effect="fadeInLeft">
-						<span class="search-main-main-title">Obtain your Covid-19 vaccine certificate</span>
-						<div class="search-main-main-input">
-							<div class="search-main-full-name">
-								<div class="search-main-full-name-text">
-									<span>Full Name</span>
-									<span class="search-main-full-name-text-required">(*)</span>
-								</div>
-								<input type="text" placeholder="Full Name" required>
-							</div>
-							
-							<div class="search-main-code">
-								<div class="search-main-code-text">
-									<span>Identification/Citizen orcode/Passport</span>
-									<span class="search-main-full-name-text-required">(*)</span>
-								</div>
-								<input type="text" placeholder="Identification/Citizen identification code/ Passport " required>
-							</div>
-						</div>
-						
-						<div class="search-main-code-text-note"><b>Note:</b> If you are vaccinated but your vaccination status is not updated, contact the vaccination site and request to update your information to the “COVID-19 VACCINE PORTAL”. You can obtain your Covid-19 vaccine certificate and provide your vaccination feedback here.</div>
-						<div class="search-main-btn">
-							<input type="submit" value="Search"></input>
-							<i  class="search-main-btn-i fas fa-search"></i>
-						</div>
-					</form>
-					<form class="search-main-main-5 search-main-main-2 search-main-main-4">
-						<span class="search-main-main-title">Look up injection registration</span>
+						<span class="search-obtain search-main-main-title">Obtain your Covid-19 vaccine certificate</span>
 						<div class="search-main-main-input">
 							<div class="search-main-full-name">
 								<div class="search-main-full-name-text">
 									<span>Identification/Citizen identification code/Passport</span>
 									<span class="search-main-full-name-text-required">(*)</span>
 								</div>
-								<input type="text" placeholder="Identification/Citizen identification code/Passport" required>
-							</div>
-							
-							<div class="search-main-code">
-								<div class="search-main-code-text">
-									<span>Phone number</span>
-									<span class="search-main-full-name-text-required">(*)</span>
-								</div>
-								<input type="text" placeholder="Phone number" required>
+								<input class="blue-input-form" type="text" placeholder="Identification/Citizen identification code/Passport" required>
 							</div>
 						</div>
 						
-						<div class="search-main-code-text-note"><b>Note:</b> If you are under 18 years old, please enter your guardian's phone number to look up</div>
-						<div class="search-main-btn">
-							<input type="submit" value="Search"></input>
+						<div class="search-main-code-text-note"><b>Note:</b> If you are vaccinated but your vaccination status is not updated, contact the vaccination site and request to update your information to the “COVID-19 VACCINE PORTAL”. You can obtain your Covid-19 vaccine certificate and provide your vaccination feedback here.</div>
+						<div class="btn-green-hover btn-search-certificate search-main-btn-3 search-main-btn">
+							<input class="btn-green-hover " type="submit" value="Search"></input>
 							<i  class="search-main-btn-i fas fa-search"></i>
 						</div>
 					</form>
-				</div>
 					
-				</div>
+					
+				</div>				
 			</div>
-			<div class="SignUpWrap" >
-				<div class="SignUp" >            
-				  <div class="SignUp-welcome">
-					  <img src="./images/bacsivacoyta.png" alt="Movie Time" />
-					  <h1>Organization Sign Up</h1>
-				  </div>
-				  <div class="SignUp_form">
+		</div>
+
+		<div id="fh5co-main" data-animate-effect="fadeInLeft">			
+			<div class="fh5co-narrow-content-2 certificate animate-box" data-animate-effect="fadeInLeft">			
+				<div _ngcontent-xkl-c8="" class="w-100 text-center">
+					<p _ngcontent-xkl-c8="" class="text-uppercase sfbold mb-1">SOCIALIST REPUBLIC OF VIETNAM </p>
+					<p _ngcontent-xkl-c8="" class="sfbold">Independence-Freedom-Happiness </p>
+				</div>
+				<div _ngcontent-xkl-c8="" class="w-100 mt-4 text-center mb-4">
+					<h4 _ngcontent-xkl-c8="" class="sfbold title-certificate"> COVID-19 VACCINE CERTIFICATE</h4>
+				</div>
+				<div _ngcontent-xkl-c8="" class="row">
+					<div _ngcontent-xkl-c8="" class="col-lg-4 col-md-6">						
+						<p _ngcontent-xkl-c8="" class="mb-1 text-title">
+							<i class="fas fa-user" aria-hidden="true"></i>
+							Fullname
+						</p>
+						<p _ngcontent-xkl-c8="" class="sfbold text-dark">Đào Phương Thảo</p>
+					</div>
+					<div _ngcontent-xkl-c8="" class="col-lg-4 col-md-6">						
+						<p _ngcontent-xkl-c8="" class="mb-1 text-title">
+							<i class="fas fa-birthday-cake" aria-hidden="true"></i>
+							Date of birth
+						</p>
+						<p _ngcontent-xkl-c8="" class="sfbold text-dark"> 25/05/2001</p>
+					</div>
+					<div _ngcontent-xkl-c8="" class="col-lg-4 col-md-6">						
+						<p _ngcontent-xkl-c8="" class="mb-1 text-title">
+							<i class="fas fa-address-card" aria-hidden="true"></i>
+							Identification/Citizen identification code/ Passport
+						</p>
+						<p _ngcontent-xkl-c8="" class="sfbold text-dark">321789194 </p>
+					</div>					
+					<div _ngcontent-xkl-c8="" class="col-lg-4 col-md-6">
+						<p _ngcontent-xkl-c8="" class="mb-1 text-title">
+							<i class="fas fa-mobile-alt"></i>
+							Phone Number
+						</p>
+						<p _ngcontent-xkl-c8="" class="sfbold text-dark"> 0363203629</p>
+					</div>
+					<div _ngcontent-xkl-c8="" class="col-lg-4 col-md-6">
+						<p _ngcontent-xkl-c8="" class="mb-1 text-title">
+							<i class="fas fa-map-marked"></i>
+							Address
+						</p>
+						<p _ngcontent-xkl-c8="" class="sfbold text-dark"> Thị trấn Ba Tri - Huyện Ba Tri - Tỉnh Bến Tre</p>
+					</div>
+					<table  class="vaccine-table-reg table-hover vaccine-table" data-animate-effect="fadeInLeft">
+						<thead>
+							<tr  class="vaccine-table-color" data-animate-effect="fadeInLeft">
+								<th>
+									Vacccine ID
+								</th>
+								<th>
+									VaccineedDate
+								</th>
+								<th>
+									Vaccination
+								</th>
+								<th>
+									Vaccine Batch
+								</th>
+								<th>
+									The Covid-19 vaccine locations
+								</th>								
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="vaccine-table-row">
+									<td scope="row">1</td>
+									<td>11/08/2021 - 00:00 </td>
+									<td>COVID-19 Vaccine AstraZeneca</td>
+									<td>A1031</td>
+									<td>TTYT Ba Tri</td>
+							</tr>
+							<tr class="vaccine-table-row">
+									<td scope="row">2</td>
+									<td>23/10/2021 - 01:00 </td>
+									<td>COVID-19 Vaccine AstraZeneca</td>
+									<td>A1108</td>
+									<td>TYT Thị Trấn Ba Tri</td>
+							</tr>	
+						</tbody>					
+					</table>							
+						
+					
+				</div>	
+                <div class="certificate-bg animate-box" data-animate-effect="fadeInLeft">                    
+					
+                        <div class="container">
+							<div class="row">
+								<div class="col-sm-3 img-certificate">
+									<div class="qrcode">
+										<img src="data:image/png;base64,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">
+									</div>
+								</div>
+								<div class="col-sm-9" style="line-height: 4rem;">
+									<div class="row">
+										<div class="col-8 col-sm-6 title-certificate-text">											
+												HAVE HAD '2' VACCINATIONS
+										</div>
+										<div class="col-4 col-sm-6">										
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-8 col-sm-6 color-blue-light">
+											<div class="vertical-line"></div>
+											<i class="fas fa-user" aria-hidden="true"></i>
+												Fullname:
+										</div>
+										<div class="col-4 col-sm-6 color-white">
+										Đào Phương Thảo
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-8 col-sm-6 color-blue-light">
+											<div class="vertical-line"></div>
+											<i class="fas fa-birthday-cake" aria-hidden="true"></i>
+											Date of birth:
+										</div>
+										<div class="col-4 col-sm-6 color-white">
+										25/05/2001
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-8 col-sm-6 color-blue-light">
+											<div class="vertical-line"></div>
+											<i class="fas fa-address-card" aria-hidden="true"></i>
+											Identification/Citizen identification code/ Passport:
+										</div>
+										<div class="col-4 col-sm-6 color-white">
+										321789194
+										</div>
+									
+								</div>							
+							</div>
+							</div>
+                    </div>
+                </div>            
+        	</div>
+		</div>
+
+		<!-- Signup_signin -->
+		<div class="SignUpWrap" >
+			<div class="SignUp" >            
+				<div class="SignUp-welcome">
+					<img src="./images/bacsivacoyta.png" alt="Movie Time" />
+					<h1>Organization Sign Up</h1>
+				</div>
+				<div class="SignUp_form">
 					<div class="triangle"></div>
-					<i class="fas fa-times-circle" aria-hidden="true"></i>
-					<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121 1.png" alt="Logo" />
-					<h1>SIGN UP</h1>
-					<input type="text" placeholder="Organization phone number">
-					<input type="email" placeholder="Email"/>
-					<div class="SignUp_password">
-					  <input type='password' id="myInput" placeholder="Password" />
-					  <i class="fas fa-eye" aria-hidden="true" onclick="myFunction()"></i>
+						<i class="btn-exit fas fa-times-circle" aria-hidden="true"></i>
+						<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png" alt="Logo" />
+						<h1>SIGN UP</h1>
+						<input type="text" class="forgot-password-input" placeholder="Organization phone number">
+						<input type="email" class="forgot-password-input" placeholder="Email"/>
+						<div class="SignUp_password">
+						<input type='password' class="forgot-password-input input-psw-signup" oninput="myFunction2()" placeholder="Password" />
+						<i class="signup-psw-1 fas fa-eye" aria-hidden="true" onclick="myFunction1()"></i>
+						<i class="signup-psw-2 fas fa-eye-slash" onclick="myFunction1()"></i>
 					</div>
 					<div class="SignUp_password">
-						<input type='password' placeholder="Confirm Password" />
+						<input type='password' class="forgot-password-input input-psw-confirm" oninput="myFunction4()" placeholder="Confirm password" />
+						<i class="confirm-psw-1 fas fa-eye" aria-hidden="true" onclick="myFunction3()"></i>
+						<i class="confirm-psw-2 fas fa-eye-slash" onclick="myFunction3()"></i>				
 					</div>
 					<div class="SignUp_check">
-					  <input type="checkbox" name="Agree" />
-					  <label htmlFor="Agree"> Agree to the terms of Vaccination Management</label>
+						<input type="checkbox" name="Agree" />
+						<label htmlFor="Agree"> Agree to the terms of Vaccination Management</label>
 					</div>
-					<a href="#"><button>Sign up</button></a>
+					<a href="#"><button class="btn-hover-blue btn-hover-red">Sign up</button></a>
 					<div class="SignUp_toSignUp">
-					  <span>Already have an account?</span>
-					  <button class="up-to-login" >Login</button>
+						<span>Already have an account?</span>
+						<button class="btn-hover-blue up-to-login" >Login</button>
 					</div>
-				  </div>
-				</div>
-			  </div>
-			<div class="signInWrap" >
-				<div class="signIn" >
-				  
-				  <div class="signIn-welcome">
-					  <img src="./images/bacsivacoyta.png" alt="Movie Time" />
-					  <h1>Organization login</h1>
-				  </div>
-				  <div class="signIn_form">
-					
-					<i class="fas fa-times-circle"></i><br />
-					<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121 1.png" alt="Logo" />
-					<h1>LOGIN</h1>
-					<input type="email" placeholder="Email or phone number" />
-					<div class="signIn_password">
-					  <input type='password'  id="myInputLogin" placeholder="Password" />
-					  <i class="fas fa-eye" aria-hidden="true" onclick="myFunction2()" ></i>
-					</div>
-					<div class="signIn_check">
-					  <input type="checkbox" name="remember" />
-					  <label htmlFor="remember">Remember</label>
-					</div>
-					<a href="./adminHome.html"><button>Login</button></a>
-					<a href="#">Forgot password</a>
-					<div class="signIn_toSignUp">
-					  <span>Or sign up for an account</span>
-					  <button class="up-to-register">Register</button>
-					</div>
-				  </div>
 				</div>
 			</div>
-		  <div class="vaccine-delete-wrapper">
-		
-		  </div>
+	  	</div>	  
+		<div class="signInWrap" >
+			<div class="signIn" >			
+				<div class="signIn-welcome">
+					<img src="./images/bacsivacoyta.png" alt="Movie Time" />
+					<h1>Organization login</h1>
+				</div>
+				<div class="signIn_form">				
+					<i class="btn-exit fas fa-times-circle"></i><br />
+					<img src="./images/injection-blood-medicine-care-treatment-hospital-recovery-36121.png" alt="Logo" />
+					<h1>LOGIN</h1>
+					<input class="forgot-password-input" type="email" placeholder="Email or phone number" />
+					<div class="signIn_password">
+						<input type='password' class="forgot-password-input input-psw-signin" oninput="myFunction6()" placeholder="Password" />
+						<i class="signin-psw-1 fas fa-eye" aria-hidden="true" onclick="myFunction5()"></i>
+						<i class="signin-psw-2 fas fa-eye-slash" onclick="myFunction5()"></i>
+					</div>
+					<div class="signIn_check">
+						<input type="checkbox" name="remember" />
+						<label htmlFor="remember">Remember</label>
+					</div>
+					<a href="./adminHome.html" ><button class="btn-hover-blue" >Login</button></a>
+					<a class="forgot-password-btn" href="#">Forgot password</a>
+					<div class="signIn_toSignUp">
+						<span>Don't have an account?</span>
+						<button class="btn-green-hover up-to-register">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</div>  
+		<div class="vaccine-delete-wrapper forgot-password-wrap">
+			<div class="vaccine-delete forgot-password-sure" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Forgot password?</span>
+					<i class=" out-delete-vaccine forgot-password fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Please enter your email address or mobile number to search your account.
+				</div>
+				<form action="">
+					<input class="forgot-password-input" type="text" placeholder="Email or phone number" required >
+					<div class="vaccine-delete-button-1">
+						<button class="out-cancel-vaccine out-cancel-forgot" >Cancel</button>
+						<button  class="vaccine-delete-button-1-hover"><a class="submit-btn-forgot" href="#" >Submit</a></button>
+					</div>
+				</form>				
+			</div>
 		</div>
-		<script>
-			function myFunction() {
-			var x = document.getElementById("myInput");
-			if (x.type === "password") {
-				x.type = "text";
-			} else {
-				x.type = "password";
+		<div class="vaccine-delete-wrapper submit-forgot-password-wrap">
+			<div class="vaccine-delete forgot-password-sure-sc" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Successful!</span>
+					<i class=" out-delete-vaccine forgot-password-sc fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Please check your email address or your phone to create new an account.
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-forgot-sc" >Cancel</button>
+					<div class="backlogin-btn">
+						<button class="vaccine-delete-button-1-hover">
+							<a href="#"> Back to login</a>
+						</button>
+					</div>						
+				</div>
+			</div>
+		</div>
+		<div class="vaccine-delete-wrapper submit-forgot-password-wrap">
+			<div class="vaccine-delete forgot-password-sure-sc" data-animate-effect="fadeInLeft">
+				<div class="vaccine-delete-header">
+					<span>Successful</span>
+					<i class=" out-delete-vaccine forgot-password-sc fas fa-times"></i>
+				</div>
+				<div class="vaccine-delete-question">
+					Your registration is successfull. Please wait for announcement about your vaccination.
+				</div>
+				<div class="vaccine-delete-button-1">
+					<button class="out-cancel-vaccine out-cancel-forgot-sc" >Cancel</button>
+					<div class="backlogin-btn">
+						<button class="vaccine-delete-button-1-hover">
+							<a href="#"> Back to home</a>
+						</button>
+					</div>						
+				</div>
+			</div>
+		</div>
+		<!-- End-of-signup-signin -->
+		
+
+<script>
+
+			var result_certificate_search = document.querySelector(".fh5co-narrow-content-2.certificate.animate-box");
+			var btn_search_certificate = document.querySelector(".btn-search-certificate");
+			var search_main_main_6 = document.querySelector(".search-main-main-6.search-main-main");
+			btn_search_certificate.onclick = function() {
+				result_certificate_search.style.display = "block";
+				search_main_main_6.style.marginTop = 0;
+				search_main_main_6.style.marginBottom = 0;
 			}
-			}
-		</script>
-	
-	<script>
-		function myFunction2() {
-		var y = document.getElementById("myInputLogin");
-		if (y.type === "password") {
-			y.type = "text";
-		} else {
-			y.type = "password";
-		}
-		}
+
 	</script>
         
 		

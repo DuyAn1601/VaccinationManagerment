@@ -19,7 +19,6 @@ admin report
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="./js/filter.js"></script>
   	<!-- 
 	//////////////////////////////////////////////////////
 
@@ -88,14 +87,11 @@ admin report
 						<i class="fas fa-home"></i>
 						<a href="./adminHome.html" >Home</a>
 						</li>
-						<li class="fh5co-main-menu-nav-item">
+						<li class="fh5co-main-menu-nav-item-report onhold-item-nav fh5co-main-menu-nav-item">
 							<i class="fas fa-file-alt"></i>
-							<a class ="vaccine-regis" href="#" style="text-decoration-line: underline">Report</a>
+							<a class ="vaccine-regis" href="#" >Report</a>
 						</li>
-						<li class="fh5co-main-menu-nav-item">
-							<i class="fas fa-cog"></i>
-							<a class="fh5co-main-menu-nav-white" href="#" >Setting</a>
-						</li>
+						
 						<li class="fh5co-main-menu-nav-item">
 							<i class="fas fa-share-square"></i>
 							<a class="fh5co-main-menu-nav-white" href="./home.html" >As a client</a>
@@ -108,7 +104,7 @@ admin report
 			</nav>
 
 			<div class="fh5co-footer">
-				<a class="fh5co-footer-help"href="">Need help?</a>
+				<a class="fh5co-footer-help" href="./contact.html">Need help?</a>
 				<div class="fh5co-footer-contact">
 					<p>+84 356798098</p>
 					<p>altteam.help@gmail.com</p>
@@ -152,7 +148,7 @@ admin report
 				
 			</div>
 		
-<div class="container" >
+<div class="container animate-box" data-animate-effect="fadeInLeft">
     <div class="row">
         <div class="panel panel-primary filterable">
             <div class="panel-heading">
@@ -161,15 +157,15 @@ admin report
                     <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filter</button>
                 </div>
             </div>
-            <table class="table">
+            <table class="table table-hover">
                 <thead>
                     <tr class="filters">
-                        <th><input type="text" class="form-control" placeholder="ID" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="FullName" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="City" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="ChoiceInjections" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="DateOfRegistration" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="Status" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="ID" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="FullName" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="City" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="ChoiceInjections" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="DateOfRegistration" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="Status" disabled></th>
                         
                     </tr>
                 </thead>
@@ -205,7 +201,7 @@ admin report
 </div>
 		
 
-	<div class="container">
+	<div class="container animate-box" data-animate-effect="fadeInLeft">
     <div class="row">
         <div class="panel panel-primary filterable">
             <div class="panel-heading">
@@ -217,14 +213,14 @@ admin report
             <table class="table">
                 <thead>
                     <tr class="filters">
-                        <th><input type="text" class="form-control" placeholder="ID" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="QR Code" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="Vaccine Batch" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="City" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="VaccineedDate" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="ChoiceInjections" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="FullName" disabled></th>
-                        <th><input type="text" class="form-control" placeholder="Medical Staff" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="ID" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="QR Code" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="Vaccine Batch" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="City" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="VaccineedDate" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="ChoiceInjections" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="FullName" disabled></th>
+                        <th><input type="text" class="form-control blue-input-form" placeholder="Medical Staff" disabled></th>
                         
                     </tr>
                 </thead>
@@ -271,6 +267,21 @@ admin report
                     
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+<div class="vaccine-delete-wrapper logout-right-now">
+    <div class="vaccine-delete logout-right-now-pls" data-animate-effect="fadeInLeft">
+        <div class="vaccine-delete-header">
+            <span>Logout</span>
+            <i class=" out-delete-vaccine out-logout-vaccine fas fa-times"></i>
+        </div>
+        <div class="vaccine-delete-question">
+            Are you sure you want to logout?
+        </div>
+        <div class="vaccine-delete-button-1">
+            <button class="out-cancel-vaccine out-cancel-logout" >Cancel</button>
+            <button class="vaccine-delete-button-1-hover" ><a href="./home.html">Logout</a></button>
         </div>
     </div>
 </div>
